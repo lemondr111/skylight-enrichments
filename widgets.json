@@ -6,232 +6,297 @@
   "widgets": [
     {
       "id": "shodan.ip-address.search",
-      "provider": "Shodan",
+      "name": "Shodan — IP Lookup",
       "display": "Shodan — IP Lookup",
+      "provider": "Shodan",
+      "category": "Network Scanning",
       "description": "Open ports, services, banners and known vulnerabilities for an IP address.",
+      "icon": "https://www.google.com/s2/favicons?domain=shodan.io&sz=32",
+      "signupURL": "https://account.shodan.io/register",
       "types": ["ip-address"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 90,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-shodan-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "shodan.domain.search",
-      "provider": "Shodan",
+      "name": "Shodan — Domain Search",
       "display": "Shodan — Domain Search",
+      "provider": "Shodan",
+      "category": "Network Scanning",
       "description": "Shodan results for all IPs associated with a domain.",
+      "icon": "https://www.google.com/s2/favicons?domain=shodan.io&sz=32",
+      "signupURL": "https://account.shodan.io/register",
       "types": ["domain"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-shodan-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "censys.ip-address.search",
-      "provider": "Censys",
+      "name": "Censys — IP Lookup",
       "display": "Censys — IP Lookup",
+      "provider": "Censys",
+      "category": "Network Scanning",
       "description": "Services and certificates discovered on an IP via Censys.",
+      "icon": "https://www.google.com/s2/favicons?domain=censys.io&sz=32",
+      "signupURL": "https://accounts.censys.io/register",
       "types": ["ip-address"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 85,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "app_id",
-            "label": "App ID",
-            "placeholder": "your-censys-app-id",
-            "masked": false
-          },
-          {
-            "key": "secret",
-            "label": "Secret",
-            "placeholder": "your-censys-secret",
-            "masked": true
-          }
+          { "key": "app_id", "name": "App ID" },
+          { "key": "secret",  "name": "Secret" }
         ]
       }
     },
     {
       "id": "censys.domain.certs",
-      "provider": "Censys",
+      "name": "Censys — Certificate Search",
       "display": "Censys — Certificate Search",
+      "provider": "Censys",
+      "category": "WHOIS & DNS",
       "description": "TLS certificates issued for a domain, including subdomains.",
+      "icon": "https://www.google.com/s2/favicons?domain=censys.io&sz=32",
+      "signupURL": "https://accounts.censys.io/register",
       "types": ["domain"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 75,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "app_id",
-            "label": "App ID",
-            "placeholder": "your-censys-app-id",
-            "masked": false
-          },
-          {
-            "key": "secret",
-            "label": "Secret",
-            "placeholder": "your-censys-secret",
-            "masked": true
-          }
+          { "key": "app_id", "name": "App ID" },
+          { "key": "secret",  "name": "Secret" }
         ]
       }
     },
     {
       "id": "virustotal.ip-address.report",
-      "provider": "VirusTotal",
+      "name": "VirusTotal — IP Report",
       "display": "VirusTotal — IP Report",
-      "description": "VirusTotal reputation and detection results for an IP address.",
+      "provider": "VirusTotal",
+      "category": "Threat Intelligence",
+      "description": "Reputation and detection results for an IP address.",
+      "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
+      "signupURL": "https://www.virustotal.com/gui/join-us",
       "types": ["ip-address"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 90,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-virustotal-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "virustotal.domain.report",
-      "provider": "VirusTotal",
+      "name": "VirusTotal — Domain Report",
       "display": "VirusTotal — Domain Report",
-      "description": "VirusTotal reputation and detection results for a domain.",
+      "provider": "VirusTotal",
+      "category": "Threat Intelligence",
+      "description": "Reputation and detection results for a domain.",
+      "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
+      "signupURL": "https://www.virustotal.com/gui/join-us",
       "types": ["domain"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 85,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-virustotal-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "virustotal.hash.report",
-      "provider": "VirusTotal",
+      "name": "VirusTotal — File Hash Report",
       "display": "VirusTotal — File Hash Report",
-      "description": "VirusTotal scan results for a file hash (MD5, SHA1, or SHA256).",
+      "provider": "VirusTotal",
+      "category": "Threat Intelligence",
+      "description": "Scan results for a file hash (MD5, SHA1, or SHA256).",
+      "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
+      "signupURL": "https://www.virustotal.com/gui/join-us",
       "types": ["hash"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "d41d8cd98f00b204e9800998ecf8427e",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-virustotal-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "virustotal.url.report",
-      "provider": "VirusTotal",
+      "name": "VirusTotal — URL Report",
       "display": "VirusTotal — URL Report",
-      "description": "VirusTotal scan results for a URL.",
+      "provider": "VirusTotal",
+      "category": "Threat Intelligence",
+      "description": "Scan results for a URL.",
+      "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
+      "signupURL": "https://www.virustotal.com/gui/join-us",
       "types": ["url"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 75,
+      "testValue": "https://google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-virustotal-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "hibp.email-address.breaches",
-      "provider": "HaveIBeenPwned",
+      "name": "HaveIBeenPwned — Breach Check",
       "display": "HaveIBeenPwned — Breach Check",
+      "provider": "HaveIBeenPwned",
+      "category": "Threat Intelligence",
       "description": "Check whether an email address appears in known data breaches.",
+      "icon": "https://www.google.com/s2/favicons?domain=haveibeenpwned.com&sz=32",
+      "signupURL": "https://haveibeenpwned.com/API/Key",
       "types": ["email-address"],
-      "enabled": true,
+      "payWall": "paid",
+      "region": "global",
+      "priority": 85,
+      "testValue": "test@example.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-hibp-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "hunter.email-address.verify",
-      "provider": "Hunter.io",
+      "name": "Hunter.io — Email Verify",
       "display": "Hunter.io — Email Verify",
+      "provider": "Hunter.io",
+      "category": "Email Intelligence",
       "description": "Verify whether an email address is deliverable and check its source.",
+      "icon": "https://www.google.com/s2/favicons?domain=hunter.io&sz=32",
+      "signupURL": "https://hunter.io/users/sign_up",
       "types": ["email-address"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "test@google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-hunter-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "hunter.domain.search",
-      "provider": "Hunter.io",
+      "name": "Hunter.io — Domain Email Search",
       "display": "Hunter.io — Domain Email Search",
+      "provider": "Hunter.io",
+      "category": "Email Intelligence",
       "description": "Find email addresses associated with a domain.",
+      "icon": "https://www.google.com/s2/favicons?domain=hunter.io&sz=32",
+      "signupURL": "https://hunter.io/users/sign_up",
       "types": ["domain"],
-      "enabled": true,
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 75,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": [
-          {
-            "key": "key",
-            "label": "API Key",
-            "placeholder": "your-hunter-api-key",
-            "masked": true
-          }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
     {
       "id": "whois.domain.lookup",
-      "provider": "WHOIS",
+      "name": "WHOIS — Domain Lookup",
       "display": "WHOIS — Domain Lookup",
+      "provider": "WHOIS",
+      "category": "WHOIS & DNS",
       "description": "Domain registration details: registrar, dates, nameservers, contacts.",
+      "icon": "https://www.google.com/s2/favicons?domain=whois.domaintools.com&sz=32",
+      "signupURL": "",
       "types": ["domain"],
-      "enabled": true,
+      "payWall": "free",
+      "region": "global",
+      "priority": 70,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": []
       }
     },
     {
       "id": "whois.ip-address.lookup",
-      "provider": "WHOIS",
+      "name": "WHOIS — IP Lookup",
       "display": "WHOIS — IP Lookup",
+      "provider": "WHOIS",
+      "category": "WHOIS & DNS",
       "description": "IP registration and ASN details via WHOIS.",
+      "icon": "https://www.google.com/s2/favicons?domain=whois.domaintools.com&sz=32",
+      "signupURL": "",
       "types": ["ip-address"],
-      "enabled": true,
+      "payWall": "free",
+      "region": "global",
+      "priority": 65,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
       "authorization": {
         "fields": []
       }
