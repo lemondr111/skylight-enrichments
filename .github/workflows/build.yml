@@ -1,0 +1,52 @@
+name: Build & Validate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "links/**"
+      - "build.py"
+  pull_request:
+    branches: [main]
+    paths:
+      - "links/**"
+      - "build.py"
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      # On pull requests: validate only, no commit
+      - name: Validate (PR)
+        if: github.event_name == 'pull_request'
+        run: python build.py --check
+
+      # On push to main: rebuild and commit the generated links.json
+      - name: Build links.json (push to main)
+        if: github.event_name == 'push'
+        run: python build.py
+
+      - name: Commit updated links.json
+        if: github.event_name == 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add links.json
+          # Only commit if links.json actually changed
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: rebuild links.json [skip ci]"
+            git push
+          else
+            echo "links.json unchanged, nothing to commit."
+          fi

@@ -1,0 +1,45 @@
+# Threat Intelligence
+# Malware databases, blocklists, reputation scoring
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92353'
+  provider: greynoise
+  display: GreyNoise - Domain Lookup
+  url: https://www.greynoise.io/viz/ip/{value}
+  types: [domain]
+  payWall: Free
+- id: '92249'
+  provider: greynoise
+  display: GreyNoise - IP Lookup
+  url: https://www.greynoise.io/viz/ip/{value:firstIP}
+  types: [IPV6, ip-address]
+  payWall: Free
+- id: '92248'
+  provider: iknowwhatyoudownload
+  display: IKnowWhatYouDownload - Torrent Downloads/Distributions
+  url: https://iknowwhatyoudownload.com/en/peer/?ip={value}
+  types: [ip-address, IPV6]
+  payWall: Free
+- id: '92256'
+  provider: mxtoolbox
+  display: MXToolBox - Blacklist Check
+  url: https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a{value}&run=toolpage#
+  types: [ip-address, IPV6]
+  payWall: Free
+- id: '92359'
+  provider: urlhaus.abuse
+  display: URL Hause - Check malicious URLs Database
+  url: https://urlhaus.abuse.ch/browse.php?search={value}
+  types: [url, domain]
+  payWall: Free

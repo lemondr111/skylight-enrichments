@@ -1,0 +1,27 @@
+# Hash Cracking
+# Hash lookup and cracking services
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92233'
+  provider: decrypt
+  display: Decrypt Tools - MD5 Decryption
+  url: https://decrypt.tools/client-server/decrypt?type=md5&{value}
+  types: [hash]
+  payWall: Free
+- id: '92234'
+  provider: decrypt
+  display: Decrypt Tools - Sha1 Decryption
+  url: https://decrypt.tools/client-server/decrypt?type=sha1&string={value}
+  types: [hash]
+  payWall: Free

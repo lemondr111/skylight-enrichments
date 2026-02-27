@@ -1,0 +1,21 @@
+# Historical
+# Historical records, genealogy, old maps
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92207'
+  provider: pastvu
+  display: Pastvu - Old Photo Map
+  url: https://pastvu.com?g={value:noEncoding}&z=17&s=osm&t=kosmosnimki&type=1
+  types: [gps-coordinates]
+  payWall: Free

@@ -1,0 +1,240 @@
+{
+  "_note": "Widget definitions loaded by Skylight at startup. Each widget maps to a backend handler via its ID prefix.",
+  "version": "1.0.0",
+  "updatedAt": "2026-02-27",
+  "executionPath": "run/widget/",
+  "widgets": [
+    {
+      "id": "shodan.ip-address.search",
+      "provider": "Shodan",
+      "display": "Shodan — IP Lookup",
+      "description": "Open ports, services, banners and known vulnerabilities for an IP address.",
+      "types": ["ip-address"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-shodan-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "shodan.domain.search",
+      "provider": "Shodan",
+      "display": "Shodan — Domain Search",
+      "description": "Shodan results for all IPs associated with a domain.",
+      "types": ["domain"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-shodan-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "censys.ip-address.search",
+      "provider": "Censys",
+      "display": "Censys — IP Lookup",
+      "description": "Services and certificates discovered on an IP via Censys.",
+      "types": ["ip-address"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "app_id",
+            "label": "App ID",
+            "placeholder": "your-censys-app-id",
+            "masked": false
+          },
+          {
+            "key": "secret",
+            "label": "Secret",
+            "placeholder": "your-censys-secret",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "censys.domain.certs",
+      "provider": "Censys",
+      "display": "Censys — Certificate Search",
+      "description": "TLS certificates issued for a domain, including subdomains.",
+      "types": ["domain"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "app_id",
+            "label": "App ID",
+            "placeholder": "your-censys-app-id",
+            "masked": false
+          },
+          {
+            "key": "secret",
+            "label": "Secret",
+            "placeholder": "your-censys-secret",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "virustotal.ip-address.report",
+      "provider": "VirusTotal",
+      "display": "VirusTotal — IP Report",
+      "description": "VirusTotal reputation and detection results for an IP address.",
+      "types": ["ip-address"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-virustotal-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "virustotal.domain.report",
+      "provider": "VirusTotal",
+      "display": "VirusTotal — Domain Report",
+      "description": "VirusTotal reputation and detection results for a domain.",
+      "types": ["domain"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-virustotal-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "virustotal.hash.report",
+      "provider": "VirusTotal",
+      "display": "VirusTotal — File Hash Report",
+      "description": "VirusTotal scan results for a file hash (MD5, SHA1, or SHA256).",
+      "types": ["hash"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-virustotal-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "virustotal.url.report",
+      "provider": "VirusTotal",
+      "display": "VirusTotal — URL Report",
+      "description": "VirusTotal scan results for a URL.",
+      "types": ["url"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-virustotal-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "hibp.email-address.breaches",
+      "provider": "HaveIBeenPwned",
+      "display": "HaveIBeenPwned — Breach Check",
+      "description": "Check whether an email address appears in known data breaches.",
+      "types": ["email-address"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-hibp-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "hunter.email-address.verify",
+      "provider": "Hunter.io",
+      "display": "Hunter.io — Email Verify",
+      "description": "Verify whether an email address is deliverable and check its source.",
+      "types": ["email-address"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-hunter-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "hunter.domain.search",
+      "provider": "Hunter.io",
+      "display": "Hunter.io — Domain Email Search",
+      "description": "Find email addresses associated with a domain.",
+      "types": ["domain"],
+      "enabled": true,
+      "authorization": {
+        "fields": [
+          {
+            "key": "key",
+            "label": "API Key",
+            "placeholder": "your-hunter-api-key",
+            "masked": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "whois.domain.lookup",
+      "provider": "WHOIS",
+      "display": "WHOIS — Domain Lookup",
+      "description": "Domain registration details: registrar, dates, nameservers, contacts.",
+      "types": ["domain"],
+      "enabled": true,
+      "authorization": {
+        "fields": []
+      }
+    },
+    {
+      "id": "whois.ip-address.lookup",
+      "provider": "WHOIS",
+      "display": "WHOIS — IP Lookup",
+      "description": "IP registration and ASN details via WHOIS.",
+      "types": ["ip-address"],
+      "enabled": true,
+      "authorization": {
+        "fields": []
+      }
+    }
+  ]
+}

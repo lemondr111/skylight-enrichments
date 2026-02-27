@@ -1,0 +1,111 @@
+# WHOIS & DNS
+# Domain registration data, DNS records, certificate transparency
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92361'
+  provider: bigdomaindata
+  display: BigDomainData - Domain Lookup
+  url: https://www.bigdomaindata.com/whois/{value}
+  types: [domain]
+  payWall: Free
+- id: '92357'
+  provider: dnslytics
+  display: DNSLytics - Domain Lookup
+  url: https://dnslytics.com/ip/{value}
+  types: [domain]
+  payWall: Free
+- id: '92252'
+  provider: dnslytics
+  display: DNSLytics - IP Lookup
+  url: https://dnslytics.com/ip/{value:firstIP}
+  types: [ip-address, IPV6]
+  payWall: Free
+- id: '92358'
+  provider: digger
+  display: Domain Digger - Domain Lookup
+  url: https://digger.tools/lookup/nytimes.com{value}
+  types: [domain]
+  payWall: Free
+- id: '92253'
+  provider: whois.domaintools
+  display: Domain Tools - IP Lookup
+  url: https://whois.domaintools.com/{value:firstIP}
+  types: [ip-address, IPV6]
+  payWall: Free
+- id: '92354'
+  provider: whois.domaintools
+  display: Domaintools - Whois Lookup
+  url: https://whois.domaintools.com/{value}
+  types: [domain]
+  payWall: Free
+- id: '92360'
+  provider: cse.google
+  display: Email Format Discovery Google CSE
+  url: https://cse.google.com/cse?cx=f7b8419d790c84f19&q=%22{value}%22
+  types: [domain]
+  payWall: Free
+- id: '92352'
+  provider: reversewhois
+  display: ReverseWhois.op - Domain Lookup
+  url: "\thttps://www.reversewhois.io/?searchterm={value}"
+  types: [domain]
+  payWall: Free
+- id: '92349'
+  provider: seositecheckup
+  display: Seositechekup - Traffic Analyze
+  url: https://seositecheckup.com/seo-audit/{value}
+  types: [domain]
+  payWall: Free
+- id: '92251'
+  provider: viewdns
+  display: ViewDNS - Reverse IP Lookup
+  url: https://viewdns.info/reverseip/?host={value}&t=1
+  types: [IPV6, ip-address]
+  payWall: Free
+- id: '92355'
+  provider: viewdns
+  display: ViewDNS - Reverse WHOIS Search
+  url: https://viewdns.info/reversewhois/?q={value}
+  types: [domain]
+  payWall: Free
+- id: '92356'
+  provider: viewdns
+  display: ViewDNS - Reverse WHOIS Search
+  url: https://viewdns.info/reversewhois/?q={value}
+  types: [domain]
+  payWall: Free
+- id: '92351'
+  provider: whois
+  display: WHOIS - Domain Lookup
+  url: https://www.whois.com/whois/{value}
+  types: [domain]
+  payWall: Free
+- id: '92247'
+  provider: whois
+  display: WHOIS - IP Lookup
+  url: https://www.whois.com/whois/{value:firstIP}
+  types: [ip-address, IPV6]
+  payWall: Free
+- id: '92202'
+  provider: whoisfreaks
+  display: WHOISFreaks - WHOIS History Search
+  url: https://whoisfreaks.com/tools/whois/reverse/search/email/{value}?includes=all
+  types: [email-address]
+  payWall: Free
+- id: '92350'
+  provider: zoomeye
+  display: ZoomEye - Domain Lookup
+  url: https://www.zoomeye.org/searchResult?q={value}
+  types: [domain]
+  payWall: Free

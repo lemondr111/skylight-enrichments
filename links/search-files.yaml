@@ -1,0 +1,201 @@
+# Search & Files
+# General search engines, file search, paste sites, code search
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92270'
+  provider: btdig
+  display: BTDIG - Torrents Search
+  url: https://btdig.com/search?order=0&q={value}
+  types: [name, alias]
+  payWall: Free
+- id: '92310'
+  provider: bing
+  display: Bing Search
+  url: https://www.bing.com/search?q={value}
+  types: [name, alias, crypto-address, domain]
+  payWall: Free
+- id: '92269'
+  provider: eyedex
+  display: EyeDex - Open Directories Search
+  url: https://www.eyedex.org/search/?q={value}
+  types: [name, alias]
+  payWall: Free
+- id: '92267'
+  provider: filepursuit
+  display: FilePursuit - Open Directories Search
+  url: https://filepursuit.com/pursuit?q={value}&type=all
+  types: [name, alias]
+  payWall: Free
+- id: '92218'
+  provider: google
+  display: Google - .git folder
+  url: https://www.google.com/search?q=inurl:%22{value}%20%22nytimes.com%20-github
+  types: [domain]
+  payWall: Free
+- id: '92215'
+  provider: google
+  display: Google - Backup Files
+  url: https://www.google.com/search?q=site:{value}%2Bext%3Abkf%2B%7C%2Bext%3Abkp%2B%7C%2Bext%3Abak%2B%7C%2Bext%3Aold%2B%7C%2Bext%3Abackup
+  types: [domain]
+  payWall: Free
+- id: '92272'
+  provider: google
+  display: Google - CSV, Excel, Database Search
+  url: https://www.google.com/search?q=filetype%253Axls%2BOR%2Bfiletype%253Acsv%2BOR%2Bfiletype%253Axlsx%2BOR%2Bfiletype%253Asql%2Bsite%253A{value}
+  types: [alias, name, domain]
+  payWall: Free
+- id: '92222'
+  provider: google
+  display: Google - Config Files
+  url: https://www.google.com/search?q=site:{value}%20ext:xml%20
+  types: [domain]
+  payWall: Free
+- id: '92274'
+  provider: google
+  display: Google - DOCX, PDF, PPTX Mentions
+  url: https://www.google.com/search?q={value}0%9D+filetype%3Apdf+OR+filetype%3Apptx+OR+filetype%3Adocx
+  types: [alias, name]
+  payWall: Free
+- id: '92212'
+  provider: google
+  display: Google - Documents Mentions
+  url: https://www.google.com/search?q=site%3Adocs.google.com%20inurl%3A%22%2Fd%2F%22%20%22{value}%22
+  types: [domain]
+  payWall: Free
+- id: '92276'
+  provider: google
+  display: Google - Emails Search by Emodji)
+  url: https://www.google.com/search?q={value}D%2BAND%2B%28%F0%9F%93%A7%2BOR%2B%F0%9F%93%A8%2BOR%2B%F0%9F%93%A9%2BOR%2B%E2%9C%89%29
+  types: [name]
+  payWall: Free
+- id: '92211'
+  provider: google
+  display: Google - Excel, CSV and SQL databases
+  url: https://www.google.com/search?q=filetype%3Axls%2BOR%2Bfiletype%3Acsv%2BOR%2Bfiletype%3Axlsx%2BOR%2Bfiletype%3Asql%2Bsite%3A{value}
+  types: [domain]
+  payWall: Free
+- id: '92273'
+  provider: google
+  display: Google - Face Images Search
+  url: https://www.google.com/search?q=%22{value:firstName}+{value:lastName}%22&tbs=itp:face&udm=2
+  types: [alias, name]
+  payWall: Free
+- id: '92223'
+  provider: google
+  display: Google - Install/Setup files
+  url: https://www.google.com/search?q=site:{value}%20inurl:readme%20
+  types: [domain]
+  payWall: Free
+- id: '92214'
+  provider: google
+  display: Google - Juicy Info Files
+  url: https://www.google.com/search?q=site%3A{value}%20ext%3Alog%20%7C%20ext%3Atxt%20%7C%20ext%3Aconf%20%7C%20ext%3Acnf%20%7C%20ext%3Aini%20%7C%20ext%3Aenv%20%7C%20ext%3Ash%20%7C%20ext%3Abak%20%7C%20ext%3Abackup%20%7C%20ext%3Aswp%20%7C%20ext%3Aold%20%7C%20ext%3A~%20%7C%20ext%3Agit%20%7C%20ext%3Asvn%20%7C%20ext%3Ahtpasswd%20%7C%20ext%3Ahtaccess%20%7C%20ext%3A
+  types: [domain]
+  payWall: Free
+- id: '92219'
+  provider: google
+  display: Google - Logs files
+  url: https://www.google.com/search?q=site:{value}%20ext:log
+  types: [domain]
+  payWall: Free
+- id: '92216'
+  provider: google
+  display: Google - Open Directories Search without Subdomains
+  url: https://www.google.com/search?q=intitle%253A%2522index%2Bof%2522%2Bsite%253A{value}
+  types: [domain]
+  payWall: Free
+- id: '92221'
+  provider: google
+  display: Google - Open Redirect
+  url: https://www.google.com/search?q=site:{value}%20inurl:redir%20
+  types: [domain]
+  payWall: Free
+- id: '92213'
+  provider: google
+  display: Google - PDFs and MS Office documents
+  url: https://www.google.com/search?q=site%253A{value}D%2Bext%253Atxt%2B%257C%2Bext%253Apdf%2B%257C%2Bext%253Axml%2B%257C%2Bext%253Axls%2B%257C%2Bext%253Axlsx%2B%257C%2Bext%253Appt%2B%257C%2Bext%253Apptx%2B%257C%2Bext%253Adoc%2B%257C%2Bext%253Adocx
+  types: [domain]
+  payWall: Free
+- id: '92277'
+  provider: google
+  display: Google - Phones Search by Emodji)
+  url: https://www.google.com/search?q={value}%2BAND%2B%28%25E2%259C%2586%2BOR%2B%25E2%2598%258E%2BOR%2B%25E2%2598%258F%2BOR%2B%25F0%259F%2593%25B1%2BOR%2B%25F0%259F%2593%259E%29%0A
+  types: [name]
+  payWall: Free
+- id: '92220'
+  provider: google
+  display: Google - Phpinfo files
+  url: https://www.google.com/search?q=site:{value}%20ext:php%20intitle:phpinfo%20%27published%20by%20the%20PHP%20Group%27
+  types: [domain]
+  payWall: Free
+- id: '92275'
+  provider: google
+  display: Google - Profiles Search
+  url: https://www.google.com/search?q=inurl%3A{value}
+  types: [alias]
+  payWall: Free
+- id: '92217'
+  provider: google
+  display: Google -Open Directories with Subdomains
+  url: https://www.google.com/search?q=intitle%253A%2522index%2Bof%2522%2Bsite%253A*,{value}
+  types: [domain]
+  payWall: Free
+- id: '92278'
+  provider: google
+  display: Google Documents Mentions
+  url: https://www.google.com/search?q=site%3Adocs.google.com%20inurl%3A%22%2Fd%2F%22%20%22{value}%22
+  types: [name]
+  payWall: Free
+- id: '92308'
+  provider: google
+  display: Google Search
+  url: https://www.google.com/search?q={value}
+  types: [domain, crypto-address, name, alias]
+  payWall: Free
+- id: '92306'
+  provider: resumes.indeed
+  display: Indeed CV Search
+  url: https://resumes.indeed.com/search?q={value:firstName}+{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92312'
+  provider: marginalia-search
+  display: Marginalia Search
+  url: https://marginalia-search.com/search?query={value}
+  types: [name, domain, alias]
+  payWall: Free
+- id: '92268'
+  provider: odcrawler
+  display: ODCrawler - Open Directories Search
+  url: https://odcrawler.xyz/search/{value}
+  types: [name, alias]
+  payWall: Free
+- id: '92311'
+  provider: wikipedia
+  display: Wikipedia Search
+  url: https://wikipedia.org/w/index.php?search={value}
+  types: [alias, name, domain]
+  payWall: Free
+- id: '92313'
+  provider: wolframalpha
+  display: Wolfram Alpha
+  url: https://www.wolframalpha.com/input?i={value}
+  types: [alias, ip-address, name, domain]
+  payWall: Free
+- id: '92309'
+  provider: yandex
+  display: Yandex Search
+  url: https://yandex.ru/search/?text={value}
+  types: [alias, domain, crypto-address, name]
+  payWall: Free

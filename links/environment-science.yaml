@@ -1,0 +1,33 @@
+# Environment & Science
+# Weather, satellite imagery, geological and environmental data
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92208'
+  provider: copernix
+  display: Copernix - Geotagged Wikipedia Articles
+  url: https://copernix.io/#?where={value:noEncoding},4&?query=&?map_type=hybrid
+  types: [gps-coordinates]
+  payWall: Free
+- id: '92209'
+  provider: firms.modaps.eosdis.nasa
+  display: FIRMS - NASA Fire Map
+  url: https://firms.modaps.eosdis.nasa.gov/map/#d:24hrs;@{value:noEncoding},4.0z
+  types: [gps-coordinates]
+  payWall: Free
+- id: '92210'
+  provider: ventusky
+  display: Ventusky - Weather History Map
+  url: https://www.ventusky.com/?p={value:noEncoding};1800&l=temperature-2m
+  types: [gps-coordinates]
+  payWall: Free

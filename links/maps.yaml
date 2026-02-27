@@ -1,0 +1,27 @@
+# Maps
+# Mapping and geolocation services
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92206'
+  provider: google
+  display: Google Maps
+  url: https://www.google.com/maps/search/{value}
+  types: [gps-coordinates]
+  payWall: Free
+- id: '92205'
+  provider: openstreetmap
+  display: Open Street Map
+  url: https://www.openstreetmap.org/search?query={value}&zoom=13
+  types: [gps-coordinates]
+  payWall: Free

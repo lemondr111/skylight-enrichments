@@ -1,0 +1,39 @@
+# Username Search
+# Username enumeration across platforms
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92196'
+  provider: instantusername
+  display: Instant Username
+  url: https://instantusername.com/?q={value}
+  types: [alias]
+  payWall: Free
+- id: '92197'
+  provider: namechk
+  display: NameCheck - Domain Names Search
+  url: https://namechk.com/namechk-plugin-search-results/?n={value}
+  types: [alias]
+  payWall: Free
+- id: '92198'
+  provider: namevine
+  display: NameVine - Domain Names Search
+  url: https://namevine.com/#/{value}
+  types: [alias]
+  payWall: Free
+- id: '92291'
+  provider: peekyou
+  display: PeekYou - Public Records/Background Search
+  url: https://www.peekyou.com/username={value}
+  types: [alias]
+  payWall: Free

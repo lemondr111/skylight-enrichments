@@ -1,0 +1,45 @@
+# Social Profiles
+# Profile aggregators, social account finders
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92317'
+  provider: facebook
+  display: Facebook Profile
+  url: https://www.facebook.com/{value}
+  types: [alias]
+  payWall: Free
+- id: '92314'
+  provider: github
+  display: Github - users search
+  url: https://github.com/search?q={value}&type=users
+  types: [alias]
+  payWall: Free
+- id: '92316'
+  provider: instagram
+  display: Instagram Profile
+  url: https://www.instagram.com/{value}
+  types: [alias]
+  payWall: Free
+- id: '92319'
+  provider: '{value}.tumblr'
+  display: Tumblr Profile
+  url: https://{value}.tumblr.com/
+  types: [alias]
+  payWall: Free
+- id: '92315'
+  provider: x
+  display: X - last tweets from user
+  url: https://x.com/search?q=from%3A{value}&src=typed_query&f=live
+  types: [alias]
+  payWall: Free

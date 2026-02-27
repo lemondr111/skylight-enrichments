@@ -1,0 +1,106 @@
+# People Search
+# People finders, background check, address lookup
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92282'
+  provider: beenverified
+  display: Been Verified - USA White Pages Lookup
+  url: https://www.beenverified.com/people/{value:firstName}-{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92283'
+  provider: blockshopper
+  display: BlockShopper - Recent Properties Sales
+  url: https://blockshopper.com/search?type=names&q={value:firstName}+{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92284'
+  provider: clustrmaps
+  display: ClustrMaps - USA Whitepages Lookup
+  url: https://clustrmaps.com/persons/{value:firstName}-{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92301'
+  provider: cyberbackgroundchecks
+  display: CyberBackgroundChecks - People Search
+  url: https://www.cyberbackgroundchecks.com/phone/{value}
+  types: [phone-number]
+  payWall: Free
+- id: '92285'
+  provider: cse.google
+  display: Locate Family Google CSE
+  url: "https://cse.google.com/cse?cx=partner-pub-7233843800519946:6667570044&ie=UTF-8&q={value:firstName}+{value:lastName}"
+  types: [name]
+  payWall: Free
+- id: '92293'
+  provider: nameberry
+  display: NameBerry - first name variation
+  url: https://nameberry.com/search?q={value:firstName}
+  types: [name]
+  payWall: Free
+- id: '92290'
+  provider: peekyou
+  display: PeekYou - Public Records/Background Search
+  url: https://www.peekyou.com/{value:firstName}_{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92279'
+  provider: predictasearch
+  display: Predicta Search - Social media accounts
+  url: https://www.predictasearch.com/?q={value}
+  types: [name]
+  payWall: Free
+- id: '92201'
+  provider: thatsthem
+  display: ThatsThem
+  url: https://thatsthem.com/email/{value}
+  types: [email-address]
+  payWall: Free
+- id: '92200'
+  provider: truepeoplesearch
+  display: True People Search
+  url: https://www.truepeoplesearch.com/resultemail?email={value}
+  types: [email-address]
+  payWall: Free
+- id: '92300'
+  provider: truecaller
+  display: TrueCaller - People Search
+  url: https://www.truecaller.com/search/us/{value}
+  types: [phone-number]
+  payWall: Freemium
+- id: '92298'
+  provider: truepeoplesearch
+  display: TruePeopleSearch
+  url: https://www.truepeoplesearch.com/results?phoneno={value}
+  types: [phone-number]
+  payWall: Free
+- id: '92281'
+  provider: truthfinder
+  display: Truth Finder - People Search
+  url: "https://www.truthfinder.com/results/?firstName={value:firstName}&lastName={value:lastName}\
+    \ Been Verified - USA White Pages Lookup\tname\t\t"
+  types: [name]
+  payWall: Free
+- id: '92299'
+  provider: whitepages
+  display: USA White Pages Mentions
+  url: https://www.whitepages.com/phone/{value}
+  types: [phone-number]
+  payWall: Free
+- id: '92280'
+  provider: webmii
+  display: Webmii - People Search
+  url: http://webmii.com/people?n={value}
+  types: [name]
+  payWall: Free

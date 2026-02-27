@@ -1,0 +1,183 @@
+# Social & Video
+# Social networks, video platforms, image hosts, forums
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92339'
+  provider: dailymotion
+  display: DailyMotion Search
+  url: https://www.dailymotion.com/search/{value}/top-results
+  types: [name, hashtag, domain, alias]
+  payWall: Free
+- id: '92260'
+  provider: deezer
+  display: Deezer Search
+  url: https://www.deezer.com/search/{value}
+  types: [alias, hashtag, name]
+  payWall: Free
+- id: '92303'
+  provider: depositphotos
+  display: DepositPhotos Search
+  url: https://depositphotos.com/photos/{value}.html?filter=all
+  types: [hashtag, alias, name]
+  payWall: Free
+- id: '92323'
+  provider: disboard
+  display: Disboard - Discord Servers Search
+  url: https://disboard.org/search?keyword={value}
+  types: [alias, name]
+  payWall: Free
+- id: '92321'
+  provider: facebook
+  display: Facebook - People Search
+  url: https://www.facebook.com/search/people/?q={value}&epa=SERP_TAB
+  types: [name]
+  payWall: Free
+- id: '92336'
+  provider: filmot
+  display: Filmot - YouTube 1.3B+ subtitles search
+  url: https://filmot.com/search/{value}/1?gridView=1
+  types: [name, alias]
+  payWall: Free
+- id: '92302'
+  provider: flickr
+  display: Flickr Search
+  url: https://www.flickr.com/search/?text={value}
+  types: [alias, name, hashtag]
+  payWall: Free
+- id: '92271'
+  provider: google
+  display: Google - Telegram Users Search
+  url: https://www.google.com/search?q=inurl%3At.me+{value}
+  types: [alias]
+  payWall: Free
+- id: '92305'
+  provider: google
+  display: Google CV Search
+  url: https://www.google.com/search?q=%22{value:firstName}+{value:lastName}%22+AND+%28%22Resume%22+OR+%22Curriculum+Vitae%22+OR+%22CV%22%29
+  types: [name]
+  payWall: Free
+- id: '92320'
+  provider: instagram
+  display: Instagram - Hashtag Search
+  url: https://www.instagram.com/explore/tags/{value}
+  types: [hashtag]
+  payWall: Free
+- id: '92328'
+  provider: kick
+  display: Kick Search
+  url: https://kick.com/search?query={value}
+  types: [name, alias, hashtag, domain]
+  payWall: Free
+- id: '92307'
+  provider: linkedin
+  display: Linkedin People Search
+  url: https://www.linkedin.com/search/results/all/?keywords={value:firstName}%20{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92325'
+  provider: medium
+  display: Medium Mentions
+  url: https://medium.com/search?q=%23{value}
+  types: [hashtag, name, alias]
+  payWall: Free
+- id: '92324'
+  provider: pinterest
+  display: Pinterest Mentions
+  url: https://www.pinterest.com/search/pins/?q=%23{value}
+  types: [hashtag]
+  payWall: Free
+- id: '92341'
+  provider: playeur
+  display: Playeur Search
+  url: https://playeur.com/search?q={value}
+  types: [alias, name, domain, hashtag]
+  payWall: Free
+- id: '92326'
+  provider: reddit
+  display: Reddit Mentions
+  url: https://www.reddit.com/search/?q=%23{value}
+  types: [alias, hashtag, name]
+  payWall: Free
+- id: '92340'
+  provider: rumble
+  display: Rumble Search
+  url: https://rumble.com/search/all?q={value}
+  types: [hashtag, domain, alias, name]
+  payWall: Free
+- id: '92304'
+  provider: shutterstock
+  display: ShutterStock Search
+  url: https://www.shutterstock.com/search/{value}
+  types: [alias, hashtag, name]
+  payWall: Free
+- id: '92322'
+  provider: social-searcher
+  display: Social Sercher - Social Media Mentions Search
+  url: https://www.social-searcher.com/social-buzz/?q5={value}
+  types: [alias, name]
+  payWall: Free
+- id: '92258'
+  provider: soundcloud
+  display: SoundCloud Search
+  url: https://soundcloud.com/search?q={value}
+  types: [alias, hashtag, name]
+  payWall: Free
+- id: '92259'
+  provider: open.spotify
+  display: Spotify Search
+  url: https://open.spotify.com/search/{value}
+  types: [hashtag, alias, name]
+  payWall: Free
+- id: '92199'
+  provider: cse.google
+  display: Telegago Telegram CSE
+  url: https://cse.google.com/cse?q=+&cx=006368593537057042503:efxu7xprihg#gsc.tab=0&gsc.q=%20{value}&gsc.sort=date%22
+  types: [alias]
+  payWall: Free
+- id: '92342'
+  provider: tiktok
+  display: TikTok Search
+  url: https://www.tiktok.com/search/user?lang=en&q={value}
+  types: [alias, name, hashtag, domain]
+  payWall: Free
+- id: '92329'
+  provider: trovo
+  display: Trovo Search
+  url: https://trovo.live/search?q={value}
+  types: [alias, hashtag, name, domain]
+  payWall: Free
+- id: '92327'
+  provider: twitch
+  display: Twitch Search
+  url: https://www.twitch.tv/search?term={value}
+  types: [domain, alias, name]
+  payWall: Free
+- id: '92338'
+  provider: vimeo
+  display: Vimeo Search
+  url: https://vimeo.com/search?q={value}
+  types: [name, hashtag, domain, alias]
+  payWall: Free
+- id: '92318'
+  provider: x
+  display: X - Hashtag Search
+  url: https://x.com/hashtag/{value}
+  types: [hashtag]
+  payWall: Free
+- id: '92337'
+  provider: youtube
+  display: YouTube Search
+  url: https://www.youtube.com/results?search_query={value}
+  types: [hashtag, domain, alias, name]
+  payWall: Free

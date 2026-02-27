@@ -1,0 +1,153 @@
+# Archives & Press
+# Web archives, cached pages, news archives, press databases
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92331'
+  provider: americanarchive
+  display: American Archive of Public Broadcasting Search
+  url: https://americanarchive.org/catalog?q={value}
+  types: [name]
+  payWall: Free
+- id: '92192'
+  provider: archive-it
+  display: Archive-it.org Mentions
+  url: https://archive-it.org/explore?q={value}
+  types: [domain, url]
+  payWall: Free
+- id: '92190'
+  provider: archive
+  display: Archive.is Snapshots
+  url: http://archive.is/newest/{value}
+  types: [domain, url]
+  payWall: Free
+- id: '92330'
+  provider: archive
+  display: Archive.org TV news - Search TV Captions since 2009
+  url: https://archive.org/details/tv?q={value}
+  types: [name]
+  payWall: Free
+- id: '92191'
+  provider: archive.wikiwix
+  display: Arquivo.pt Snapshots
+  url: http://archive.wikiwix.com/cache/index2.php?url={value}
+  types: [url, domain]
+  payWall: Free
+- id: '92333'
+  provider: bbc.co
+  display: BBC Archive Search
+  url: https://www.bbc.co.uk/search?q={value}
+  types: [name]
+  payWall: Free
+- id: '92287'
+  provider: familysearch
+  display: Family Search - Genealogy Records
+  url: https://www.familysearch.org/en/surname?surname={value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92289'
+  provider: en.geneanet
+  display: Geneanet - Genealogy records
+  url: https://en.geneanet.org/fonds/individus/?go=1&nom={value:lastName}&prenom=&prenom_operateur=or&with_variantes_nom=&with_variantes_nom_conjoint=&with_variantes_prenom=&with_variantes_prenom_conjoint=&size=10
+  types: [name]
+  payWall: Free
+- id: '92288'
+  provider: geni
+  display: Geni - Genealogy Records
+  url: https://www.geni.com/search?search_type=people&names={value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92195'
+  provider: ghostarchive
+  display: Ghost Archive
+  url: https://ghostarchive.org/search?term={value}
+  types: [url, domain]
+  payWall: Free
+- id: '92262'
+  provider: google
+  display: Google Newspapers Search
+  url: https://www.google.com/search?q={value}&tbm=bks&tbs=bkt:s&source=newspapers
+  types: [alias, name, domain]
+  payWall: Free
+- id: '92261'
+  provider: loc
+  display: Library of congress - archive Search
+  url: https://www.loc.gov/search/?new=true&q={value}
+  types: [domain, name, alias]
+  payWall: Free
+- id: '92264'
+  provider: newspaperarchive
+  display: Newspaper Archive - search since 1700
+  url: https://newspaperarchive.com/tags/?pf={value:firstName}&pl={value:lastName}/
+  types: [name]
+  payWall: Free
+- id: '92263'
+  provider: newspapers
+  display: Newspapers.com - Archive Search
+  url: https://www.newspapers.com/results/?keyword={value}&locale=en-US
+  types: [domain, alias, name]
+  payWall: Free
+- id: '92188'
+  provider: pagecached
+  display: Pagecached - Cached/Archived Pages in Different Services
+  url: https://pagecached.com/?url={value}
+  types: [url, domain]
+  payWall: Free
+- id: '92292'
+  provider: scribd
+  display: Scribd - Documents Search
+  url: https://www.scribd.com/search?query={value:firstName}%20{value:lastName}
+  types: [name]
+  payWall: Free
+- id: '92194'
+  provider: swap.stanford
+  display: Stanford Web Archive Snapshot
+  url: https://swap.stanford.edu/was/*/{value}
+  types: [domain, url]
+  payWall: Free
+- id: '92332'
+  provider: tvnews.vanderbilt
+  display: Television Vanderbilt News Archive - News since 1968
+  url: https://tvnews.vanderbilt.edu/search?query={value}
+  types: [name]
+  payWall: Free
+- id: '92266'
+  provider: britishnewspaperarchive.co
+  display: The British Newspaper Archive Search
+  url: https://www.britishnewspaperarchive.co.uk/search/results?basicsearch={value}
+  types: [name]
+  payWall: Free
+- id: '92193'
+  provider: trove.nla.gov
+  display: Troove Snapshots
+  url: https://trove.nla.gov.au/search/category/websites?keyword={value}
+  types: [domain, url]
+  payWall: Free
+- id: '92265'
+  provider: nationalarchives.gov
+  display: United Kingdom national Archive Search
+  url: https://www.nationalarchives.gov.uk/search/results?_q={value}
+  types: [name]
+  payWall: Free
+- id: '92187'
+  provider: web.archive
+  display: Wayback Machine Main Page Snapshots
+  url: https://web.archive.org/web/20250000000000*/{value}
+  types: [domain, url]
+  payWall: Free
+- id: '92189'
+  provider: webcitation
+  display: Webcitation Archive Snapshots
+  url: https://www.webcitation.org/query?url={value}
+  types: [domain, url]
+  payWall: Free
