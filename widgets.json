@@ -395,10 +395,10 @@
       "display": "DeHashed — Breach Search",
       "provider": "DeHashed",
       "category": "Threat Intelligence",
-      "description": "Search breach databases for an email, domain, IP or username. Returns passwords, hashes and source databases.",
+      "description": "Search breach databases for an email, domain, IP, username or name. Returns passwords, hashes and source databases.",
       "icon": "https://www.google.com/s2/favicons?domain=dehashed.com&sz=32",
       "signupURL": "https://dehashed.com/",
-      "types": ["email-address", "domain", "ip-address"],
+      "types": ["email-address", "domain", "ip-address", "alias", "name"],
       "payWall": "paid",
       "region": "global",
       "priority": 70,
@@ -408,8 +408,7 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "email", "name": "Account Email" },
-          { "key": "key",   "name": "API Key" }
+          { "key": "key", "name": "API Key" }
         ]
       }
     },
