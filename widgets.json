@@ -1,7 +1,7 @@
 {
   "_note": "Widget definitions loaded by Skylight at startup. Each widget maps to a backend handler via its ID prefix.",
   "version": "1.0.0",
-  "updatedAt": "2026-02-27",
+  "updatedAt": "2026-02-28",
   "executionPath": "run/widget/",
   "widgets": [
     {
@@ -299,6 +299,118 @@
       "autorun": false,
       "authorization": {
         "fields": []
+      }
+    },
+    {
+      "id": "emailrep.email-address.reputation",
+      "name": "EmailRep — Email Reputation",
+      "display": "EmailRep — Email Reputation",
+      "provider": "EmailRep",
+      "category": "Email Intelligence",
+      "description": "Risk scoring and profile lookup for an email address. Detects disposable, spam, and breached accounts.",
+      "icon": "https://www.google.com/s2/favicons?domain=emailrep.io&sz=32",
+      "signupURL": "https://emailrep.io/key",
+      "types": ["email-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "test@gmail.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key (optional)" }
+        ]
+      }
+    },
+    {
+      "id": "robtex.ip-address.query",
+      "name": "RobTex — IP Intelligence",
+      "display": "RobTex — IP Intelligence",
+      "provider": "RobTex",
+      "category": "WHOIS & DNS",
+      "description": "BGP, ASN and passive/active DNS records for an IP address. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=robtex.com&sz=32",
+      "signupURL": "",
+      "types": ["ip-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 60,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": []
+      }
+    },
+    {
+      "id": "robtex.domain.dns",
+      "name": "RobTex — Domain DNS",
+      "display": "RobTex — Domain DNS",
+      "provider": "RobTex",
+      "category": "WHOIS & DNS",
+      "description": "Passive DNS history for a domain. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=robtex.com&sz=32",
+      "signupURL": "",
+      "types": ["domain"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 55,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": []
+      }
+    },
+    {
+      "id": "ipinfo.ip-address.lookup",
+      "name": "IPinfo — IP Geolocation",
+      "display": "IPinfo — IP Geolocation",
+      "provider": "IPinfo",
+      "category": "Geolocation",
+      "description": "City, region, country, coordinates, ASN and abuse contact for an IP address.",
+      "icon": "https://www.google.com/s2/favicons?domain=ipinfo.io&sz=32",
+      "signupURL": "https://ipinfo.io/signup",
+      "types": ["ip-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 75,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "token", "name": "API Token (optional)" }
+        ]
+      }
+    },
+    {
+      "id": "dehashed.email-address.search",
+      "name": "DeHashed — Breach Search",
+      "display": "DeHashed — Breach Search",
+      "provider": "DeHashed",
+      "category": "Threat Intelligence",
+      "description": "Search breach databases for an email, domain, IP or username. Returns passwords, hashes and source databases.",
+      "icon": "https://www.google.com/s2/favicons?domain=dehashed.com&sz=32",
+      "signupURL": "https://dehashed.com/",
+      "types": ["email-address", "domain", "ip-address"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 70,
+      "testValue": "test@example.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "email", "name": "Account Email" },
+          { "key": "key",   "name": "API Key" }
+        ]
       }
     }
   ]
