@@ -1,6 +1,6 @@
 {
   "_note": "Widget definitions loaded by Skylight at startup. Each widget maps to a backend handler via its ID prefix.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "updatedAt": "2026-02-28",
   "executionPath": "run/widget/",
   "widgets": [
@@ -410,6 +410,449 @@
         "fields": [
           { "key": "email", "name": "Account Email" },
           { "key": "key",   "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "epieos.email-address.search",
+      "name": "Epieos — Email OSINT",
+      "display": "Epieos — Email OSINT",
+      "provider": "Epieos",
+      "category": "Email Intelligence",
+      "description": "Enumerate services registered to an email address including Google, Apple, social networks, and more.",
+      "icon": "https://www.google.com/s2/favicons?domain=epieos.com&sz=32",
+      "signupURL": "https://epieos.com/",
+      "types": ["email-address"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 85,
+      "testValue": "test@gmail.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "epieos.phone-number.search",
+      "name": "Epieos — Phone OSINT",
+      "display": "Epieos — Phone OSINT",
+      "provider": "Epieos",
+      "category": "Phone Intelligence",
+      "description": "Enumerate services and accounts registered to a phone number.",
+      "icon": "https://www.google.com/s2/favicons?domain=epieos.com&sz=32",
+      "signupURL": "https://epieos.com/",
+      "types": ["phone-number"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 80,
+      "testValue": "+14155552671",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "osintind.email-address.search",
+      "name": "OSINT Industries — Email",
+      "display": "OSINT Industries — Email",
+      "provider": "OSINT Industries",
+      "category": "Email Intelligence",
+      "description": "Service enumeration for an email address across 200+ platforms. Takes 30-90 seconds to complete.",
+      "icon": "https://www.google.com/s2/favicons?domain=osint.industries&sz=32",
+      "signupURL": "https://osint.industries/price",
+      "types": ["email-address"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 90,
+      "testValue": "test@gmail.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "osintind.phone-number.search",
+      "name": "OSINT Industries — Phone",
+      "display": "OSINT Industries — Phone",
+      "provider": "OSINT Industries",
+      "category": "Phone Intelligence",
+      "description": "Service enumeration for a phone number across 200+ platforms. Takes 30-90 seconds to complete.",
+      "icon": "https://www.google.com/s2/favicons?domain=osint.industries&sz=32",
+      "signupURL": "https://osint.industries/price",
+      "types": ["phone-number"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 85,
+      "testValue": "+14155552671",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "fullcontact.email-address.enrich",
+      "name": "FullContact — Person Enrichment",
+      "display": "FullContact — Person Enrichment",
+      "provider": "FullContact",
+      "category": "Person Intelligence",
+      "description": "Enrich an email address with name, employer, social profiles, education and contact details.",
+      "icon": "https://www.google.com/s2/favicons?domain=fullcontact.com&sz=32",
+      "signupURL": "https://platform.fullcontact.com/register",
+      "types": ["email-address"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 80,
+      "testValue": "bart@fullcontact.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "token", "name": "API Token" }
+        ]
+      }
+    },
+    {
+      "id": "pdl.email-address.enrich",
+      "name": "People Data Labs — Person",
+      "display": "People Data Labs — Person",
+      "provider": "People Data Labs",
+      "category": "Person Intelligence",
+      "description": "Enrich an email or phone with work history, education, social profiles and contact details.",
+      "icon": "https://www.google.com/s2/favicons?domain=peopledatalabs.com&sz=32",
+      "signupURL": "https://www.peopledatalabs.com/signup",
+      "types": ["email-address", "phone-number"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "test@gmail.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "pipl.email-address.search",
+      "name": "Pipl — Person Search",
+      "display": "Pipl — Person Search",
+      "provider": "Pipl",
+      "category": "Person Intelligence",
+      "description": "Deep person search by email, phone, username or name. Returns identities, addresses, jobs and social profiles.",
+      "icon": "https://www.google.com/s2/favicons?domain=pipl.com&sz=32",
+      "signupURL": "https://pipl.com/api/",
+      "types": ["email-address", "phone-number", "alias", "name"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 85,
+      "testValue": "test@gmail.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "clearbit.email-address.enrich",
+      "name": "Clearbit — Person Enrichment",
+      "display": "Clearbit — Person Enrichment",
+      "provider": "Clearbit",
+      "category": "Person Intelligence",
+      "description": "Enrich an email address with person bio, social handles and company data via Clearbit (now HubSpot).",
+      "icon": "https://www.google.com/s2/favicons?domain=clearbit.com&sz=32",
+      "signupURL": "https://clearbit.com/",
+      "types": ["email-address"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 75,
+      "testValue": "alex@alexmaccaw.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "riskiq.email-address.whois",
+      "name": "RiskIQ — Email WHOIS Search",
+      "display": "RiskIQ — Email WHOIS Search",
+      "provider": "RiskIQ PassiveTotal",
+      "category": "WHOIS & DNS",
+      "description": "Find domains registered with an email address via RiskIQ PassiveTotal WHOIS history.",
+      "icon": "https://www.google.com/s2/favicons?domain=riskiq.com&sz=32",
+      "signupURL": "https://api.riskiq.net/api/signup.html",
+      "types": ["email-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 75,
+      "testValue": "admin@example.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "email", "name": "Account Email" },
+          { "key": "key",   "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "riskiq.domain.whois",
+      "name": "RiskIQ — Domain Intelligence",
+      "display": "RiskIQ — Domain Intelligence",
+      "provider": "RiskIQ PassiveTotal",
+      "category": "WHOIS & DNS",
+      "description": "WHOIS history, SSL certificates, DNS names and open services for a domain via RiskIQ PassiveTotal.",
+      "icon": "https://www.google.com/s2/favicons?domain=riskiq.com&sz=32",
+      "signupURL": "https://api.riskiq.net/api/signup.html",
+      "types": ["domain"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "riskiq.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "email", "name": "Account Email" },
+          { "key": "key",   "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "riskiq.ip-address.whois",
+      "name": "RiskIQ — IP Intelligence",
+      "display": "RiskIQ — IP Intelligence",
+      "provider": "RiskIQ PassiveTotal",
+      "category": "Threat Intelligence",
+      "description": "SSL certs, DNS names and services for an IP address via RiskIQ PassiveTotal.",
+      "icon": "https://www.google.com/s2/favicons?domain=riskiq.com&sz=32",
+      "signupURL": "https://api.riskiq.net/api/signup.html",
+      "types": ["ip-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 70,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "email", "name": "Account Email" },
+          { "key": "key",   "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "whoisxml.domain.history",
+      "name": "WhoisXMLAPI — Domain History",
+      "display": "WhoisXMLAPI — Domain History",
+      "provider": "WhoisXMLAPI",
+      "category": "WHOIS & DNS",
+      "description": "Full WHOIS registration history for a domain including contacts and registrar changes.",
+      "icon": "https://www.google.com/s2/favicons?domain=whoisxmlapi.com&sz=32",
+      "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
+      "types": ["domain"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 75,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "whoisxml.email-address.reverse",
+      "name": "WhoisXMLAPI — Reverse WHOIS",
+      "display": "WhoisXMLAPI — Reverse WHOIS",
+      "provider": "WhoisXMLAPI",
+      "category": "WHOIS & DNS",
+      "description": "Find domains registered with an email address, name or phone number.",
+      "icon": "https://www.google.com/s2/favicons?domain=whoisxmlapi.com&sz=32",
+      "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
+      "types": ["email-address", "name", "phone-number"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 70,
+      "testValue": "admin@example.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "whoisxml.ip-address.reverse",
+      "name": "WhoisXMLAPI — Reverse IP",
+      "display": "WhoisXMLAPI — Reverse IP",
+      "provider": "WhoisXMLAPI",
+      "category": "WHOIS & DNS",
+      "description": "Find domains hosted on an IP address.",
+      "icon": "https://www.google.com/s2/favicons?domain=whoisxmlapi.com&sz=32",
+      "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
+      "types": ["ip-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 65,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "leakcheck.email-address.search",
+      "name": "LeakCheck — Breach Lookup",
+      "display": "LeakCheck — Breach Lookup",
+      "provider": "LeakCheck",
+      "category": "Threat Intelligence",
+      "description": "Look up an email address or username in breach databases. Returns credentials and source databases.",
+      "icon": "https://www.google.com/s2/favicons?domain=leakcheck.io&sz=32",
+      "signupURL": "https://leakcheck.io/",
+      "types": ["email-address", "alias"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 80,
+      "testValue": "test@example.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+    {
+      "id": "hlr.phone-number.lookup",
+      "name": "HLR Lookup — Phone Validation",
+      "display": "HLR Lookup — Phone Validation",
+      "provider": "HLR Lookup",
+      "category": "Phone Intelligence",
+      "description": "Validate a mobile phone number and look up its carrier, MCC, MNC, roaming status and number portability.",
+      "icon": "https://www.google.com/s2/favicons?domain=hlrlookup.com&sz=32",
+      "signupURL": "https://portal.hlrlookup.com/Register-An-Account",
+      "types": ["phone-number"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 80,
+      "testValue": "+14155552671",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key",      "name": "API Key" },
+          { "key": "password", "name": "API Secret" }
+        ]
+      }
+    },
+    {
+      "id": "twilio.phone-number.lookup",
+      "name": "Twilio — Phone Line Intelligence",
+      "display": "Twilio — Phone Line Intelligence",
+      "provider": "Twilio",
+      "category": "Phone Intelligence",
+      "description": "Determine line type (mobile, landline, VoIP, toll-free, etc.) and carrier for a phone number.",
+      "icon": "https://www.google.com/s2/favicons?domain=twilio.com&sz=32",
+      "signupURL": "https://www.twilio.com/try-twilio",
+      "types": ["phone-number"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 85,
+      "testValue": "+14155552671",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "sid",      "name": "Account SID" },
+          { "key": "password", "name": "Auth Token" }
+        ]
+      }
+    },
+    {
+      "id": "spiderfoot.email-address.investigate",
+      "name": "SpiderFoot HX — Investigation",
+      "display": "SpiderFoot HX — Investigation",
+      "provider": "SpiderFoot",
+      "category": "OSINT Automation",
+      "description": "Launch an automated OSINT investigation in SpiderFoot HX and receive a direct link to the results.",
+      "icon": "https://www.google.com/s2/favicons?domain=spiderfoot.net&sz=32",
+      "signupURL": "https://www.spiderfoot.net/",
+      "types": ["email-address", "ip-address", "domain", "alias", "phone-number"],
+      "payWall": "paid",
+      "region": "global",
+      "priority": 70,
+      "testValue": "test@example.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key",      "name": "API Key" },
+          { "key": "instance", "name": "Instance Hostname" }
+        ]
+      }
+    },
+    {
+      "id": "arkham.crypto-address.intelligence",
+      "name": "Arkham Intelligence — Crypto Address",
+      "display": "Arkham Intelligence — Crypto Address",
+      "provider": "Arkham Intelligence",
+      "category": "Crypto Intelligence",
+      "description": "Entity identification, token holdings and transaction summary for a crypto address.",
+      "icon": "https://www.google.com/s2/favicons?domain=arkhamintelligence.com&sz=32",
+      "signupURL": "https://platform.arkhamintelligence.com",
+      "types": ["crypto-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 80,
+      "testValue": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
         ]
       }
     }
