@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updatedAt": "2026-02-28",
+  "updatedAt": "2026-03-01",
   "links": [
     {
       "id": "92187",
@@ -414,7 +414,7 @@
     {
       "id": "92212",
       "provider": "google",
-      "display": "Google - Documents Mentions",
+      "display": "Google \u2014 Documents Mentions",
       "icon": "https://www.google.com/s2/favicons?domain=www.google.com&sz=32",
       "description": "",
       "region": "Global",
@@ -423,7 +423,8 @@
       "category": "Search & Files",
       "priority": 0,
       "types": [
-        "domain"
+        "domain",
+        "name"
       ],
       "autorun": false
     },
@@ -659,7 +660,7 @@
       "description": "",
       "region": "Global",
       "payWall": "Free",
-      "url": "https://www.muckrock.com/foi/list/?q=apple",
+      "url": "https://www.muckrock.com/foi/list/?q={value}",
       "category": "Government & Legal",
       "priority": 0,
       "types": [
@@ -1299,22 +1300,6 @@
       "region": "Global",
       "payWall": "Free",
       "url": "https://www.google.com/search?q={value}%2BAND%2B%28%25E2%259C%2586%2BOR%2B%25E2%2598%258E%2BOR%2B%25E2%2598%258F%2BOR%2B%25F0%259F%2593%25B1%2BOR%2B%25F0%259F%2593%259E%29%0A",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92278",
-      "provider": "google",
-      "display": "Google Documents Mentions",
-      "icon": "https://www.google.com/s2/favicons?domain=www.google.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.google.com/search?q=site%3Adocs.google.com%20inurl%3A%22%2Fd%2F%22%20%22{value}%22",
       "category": "Search & Files",
       "priority": 0,
       "types": [
@@ -2437,7 +2422,7 @@
     {
       "id": "92352",
       "provider": "reversewhois",
-      "display": "ReverseWhois.op - Domain Lookup",
+      "display": "ReverseWhois \u2014 Domain & Email Lookup",
       "icon": "https://www.google.com/s2/favicons?domain=www.reversewhois.io&sz=32",
       "description": "",
       "region": "Global",
@@ -2446,7 +2431,8 @@
       "category": "WHOIS & DNS",
       "priority": 0,
       "types": [
-        "domain"
+        "domain",
+        "email-address"
       ],
       "autorun": false
     },
@@ -2484,22 +2470,6 @@
     },
     {
       "id": "92355",
-      "provider": "viewdns",
-      "display": "ViewDNS - Reverse WHOIS Search",
-      "icon": "https://www.google.com/s2/favicons?domain=viewdns.info&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://viewdns.info/reversewhois/?q={value}",
-      "category": "WHOIS & DNS",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92356",
       "provider": "viewdns",
       "display": "ViewDNS - Reverse WHOIS Search",
       "icon": "https://www.google.com/s2/favicons?domain=viewdns.info&sz=32",
@@ -3105,12 +3075,12 @@
     {
       "id": "92393",
       "provider": "have-i-been-pwned",
-      "display": "have-i-been-pwned",
+      "display": "Have I Been Pwned \u2014 Account Lookup",
       "icon": "https://www.google.com/s2/favicons?domain=haveibeenpwned.com",
       "description": "HIBP is a free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or \"pwned\" in a data breach.",
       "region": "Global",
       "payWall": "Free",
-      "url": "https://api.haveibeenpwned.com/unifiedsearch/{value}",
+      "url": "https://haveibeenpwned.com/account/{value}",
       "category": "Data Leaks",
       "priority": 0,
       "types": [
@@ -3215,9 +3185,9 @@
     {
       "id": "92400",
       "provider": "IPQS domain",
-      "display": "IPQS (domain)",
+      "display": "IPQS \u2014 Domain Reputation (extracted from email)",
       "icon": "https://www.google.com/s2/favicons?domain=ipqualityscore.com",
-      "description": "Prevent fraud confidently with IPQS free anti-fraud solution. IPQS fraud prevention tools detect high risk users, clicks, and payments to detect abusive behavior in real-time.",
+      "description": "Checks the reputation of the domain part of the email address",
       "region": "Global",
       "payWall": "Limited",
       "url": "https://www.ipqualityscore.com/domain-reputation/{value:domainFromEmail}",
@@ -3588,22 +3558,6 @@
       "autorun": false
     },
     {
-      "id": "92423",
-      "provider": "reversewhois",
-      "display": "reversewhois",
-      "icon": "https://www.google.com/s2/favicons?domain=reversewhois.io",
-      "description": "Find domain names owned by an individual or company.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.reversewhois.io/?searchterm={value}",
-      "category": "WHOIS & DNS",
-      "priority": 0,
-      "types": [
-        "email-address"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92424",
       "provider": "RiskIQ",
       "display": "RiskIQ",
@@ -3921,22 +3875,6 @@
       "priority": 0,
       "types": [
         "alias"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92444",
-      "provider": "trumail",
-      "display": "trumail",
-      "icon": "https://www.google.com/s2/favicons?domain=trumail.io",
-      "description": "Trumail is a fast and accurate email address verification API.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://api.trumail.io/v2/lookups/json?email={value}",
-      "category": "Validation & Tools",
-      "priority": 0,
-      "types": [
-        "email-address"
       ],
       "autorun": false
     },
