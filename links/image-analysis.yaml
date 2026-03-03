@@ -1,5 +1,5 @@
-# Network Scanning
-# Port scanners, exposed service discovery, banner grabbing
+# Image Analysis
+# EXIF data, image metadata, forensic analysis
 #
 # Fields:
 #   id       — numeric string, from upstream source
@@ -13,16 +13,10 @@
 #   description — (optional) freeform note
 #   autorun  — (optional) true to run automatically, defaults to false
 
-- id: '92250'
-  provider: search.censys
-  display: Censys - IP Lookup
-  url: https://search.censys.io/hosts/{value}/
-  types: [ip-address, IPV6]
+- id: '92381'
+  provider: exif.osint-tool
+  display: exif.osint-tool
+  url: https://exif.osint-tool.com/?srcUrl={value}
+  types: [url]
   payWall: Free
-- id: '92428'
-  provider: shodan
-  display: shodan
-  url: https://www.shodan.io/search?query={value}
-  types: [ip-address]
-  payWall: Free
-  description: Shodan is the world's first search engine for Internet-connected devices.
+  description: Shows the Exif information of a file - mostly images but anything goes

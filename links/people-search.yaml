@@ -68,3 +68,73 @@
   url: http://webmii.com/people?n={value}
   types: [name]
   payWall: Free
+- id: '92370'
+  provider: check-people
+  display: check-people
+  url: https://www.checkpeople.com/landing/people/gc1b/results?firstName={value:firstName}&lastName={value:lastName}
+  types: [name]
+  payWall: Free
+  description: Instant People Search! Start searching 100% free to find contact information, current addresses, mobile phone numbers, social media profiles, criminal records and more at CheckPeople.
+- id: '92371'
+  provider: clustrmaps
+  display: clustrmaps
+  url: https://clustrmaps.com/persons/{value:spaceToDash}
+  types: [name]
+  payWall: Free
+  priority: 7
+  region: US
+  description: ClustrMaps.com makes finding information in the United States easier than ever.
+- id: '92406'
+  provider: melissa
+  display: melissa
+  url: https://www.melissa.com/v2/lookups/personatorsearch/index?name={value}
+  types: [name]
+  payWall: Free
+  description: Melissa helps companies to harness Big Data, legacy data, and people data (names, addresses, phone numbers, and emails).
+- id: '92415'
+  provider: people-looker
+  display: people-looker
+  url: https://www.peoplelooker.com/lp/6b8dbc/2/loading?fn={value:firstName}&ln={value:lastName}&city=&state=All
+  types: [name]
+  payWall: Free
+  region: US
+  description: Find social media accounts with ease. Lookup Twitter & LinkedIn profiles. Run a background check to uncover public records, email addresses, phone numbers and much more.
+- id: '92422'
+  provider: radaris
+  display: radaris
+  url: https://radaris.com/p/{value:spaceToSlash}
+  types: [name]
+  payWall: Free
+  description: Find people instantly by name, phone or address. Search people directory and learn about people - background check, phone, address, email, reverse phone lookup, people's reviews and public records.
+- id: '92426'
+  provider: SearchSystems
+  display: SearchSystems
+  url: https://publicrecords.searchsystems.net/search-result.php?fname={value:firstName}&mname=&lname={value:lastName}&age=&city=&state=&dontcount=1
+  types: [name]
+  payWall: Free
+  region: US
+  description: Search US public records
+- id: '92434'
+  provider: spokeo
+  display: spokeo
+  url: https://www.spokeo.com/{value:spaceToDash}
+  types: [name]
+  payWall: Freemium
+  region: US
+  description: People search engine and free white pages finds phone, address, email, and photos. Find people by name, email, address, and phone for free.
+- id: '92445'
+  provider: truth-finder
+  display: truth-finder
+  url: https://www.truthfinder.com/results/?firstName={value:firstName}&lastName={value:lastName}
+  types: [name]
+  payWall: Free
+  region: US
+  description: TruthFinder gives you access to details about the people in your life. Access public records, contact information, background checks & more.
+- id: '92459'
+  provider: white-pages
+  display: white-pages
+  url: https://www.whitepages.com/name/{value}
+  types: [name]
+  payWall: Free
+  region: US
+  description: Whitepages - Search, Find, Know | The largest and most trusted online directory with contact information, background checks powered by SmartCheck, and public records for over 90% of US adults.

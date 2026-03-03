@@ -25,3 +25,17 @@
   url: https://www.openstreetmap.org/search?query={value}&zoom=13
   types: [gps-coordinates]
   payWall: Free
+- id: '92397'
+  provider: ipLocation
+  display: IP Location
+  url: https://www.iplocation.net/?query={value}
+  types: [ip-address]
+  payWall: Free
+  description: Find a geolocation of an IP address including latitude, longitude, city, region and country. Compare the data from multiple IP location providers.
+- id: '92464'
+  provider: you-get-signal
+  display: you-get-signal
+  url: https://www.yougetsignal.com/tools/network-location/?remoteAddress={value}
+  types: [ip-address]
+  payWall: Free
+  description: A collection of uncomplicated, powerful network tools.

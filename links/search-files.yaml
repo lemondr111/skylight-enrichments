@@ -175,3 +175,233 @@
   url: https://yandex.ru/search/?text={value}
   types: [alias, domain, crypto-address, name]
   payWall: Free
+- id: '92364'
+  provider: bing
+  display: bing
+  url: https://www.bing.com/search?q=%22{value}%22
+  types: [name, email-address, url]
+  payWall: Free
+  priority: 3
+  description: Bing helps you turn information into action, making it faster and easier to go from searching to doing..
+- id: '92365'
+  provider: Bing Link search
+  display: Bing Link search
+  url: https://www.bing.com/search?q=link%3A{value}
+  types: [url]
+  payWall: Free
+  priority: 3
+  description: Using the "link" operator see who links to this URL
+- id: '92369'
+  provider: callersmart
+  display: Caller Smart (US)
+  url: https://www.callersmart.com/phone-number/{value:spaceToDash}
+  types: [phone-number]
+  payWall: Freemium
+  priority: 2
+  region: US
+  description: CallerSmart helps you investigate mystery phone numbers, and avoid unwanted calls and texts. Format is XXX-XXX-XXXX, no commas (please edit URL if needed) 
+- id: '92375'
+  provider: dehashed
+  display: dehashed
+  url: https://dehashed.com/search?query=%22{value}%22
+  types: [name]
+  payWall: Freemium
+  priority: 4
+  description: Dehashed is a data-mining and hacked database search engine.
+- id: '92379'
+  provider: Epieos (LinkedIn tool)
+  display: Epieos (LinkedIn tool)
+  url: https://tools.epieos.com/?q={value}
+  types: [email-address]
+  payWall: Free
+  priority: 7
+  description: Epieos assists organizations in their cybersecurity initiatives. This tool finds LinkedIn Profiles based on email address
+- id: '92380'
+  provider: Epieos
+  display: Epieos
+  url: https://epieos.com/?q={value}&ua=vortimo
+  types: [email-address]
+  payWall: Free
+  priority: 7
+  description: Epieos assists organizations in their cyber security initiatives. This tool runs a battery of tests against the email address to resolve memberships.
+- id: '92383'
+  provider: follower-wonk
+  display: Follower Wonk
+  url: https://followerwonk.com/bio/?q={value}
+  types: [name]
+  payWall: Free
+  description: 'Followerwonk helps you explore and grow your social graph. Dig deeper into Twitter analytics: Who are your followers? Where are they located?'
+- id: '92385'
+  provider: google
+  display: google
+  url: https://www.google.com/search?q=%22{value}%22
+  types: [alias, name, email-address, ip-address, hashtag, url]
+  payWall: Free
+  priority: 5
+  description: A Google search is always a good idea.
+- id: '92386'
+  provider: google
+  display: Google Maps
+  url: https://maps.google.com/maps?q=%22{value}%22
+  types: [name]
+  payWall: Free
+  priority: 5
+  description: A Google search is always a good idea.
+- id: '92387'
+  provider: google
+  display: Vortimo CSE
+  url: https://cse.google.com/cse?cx=009983555355237802955:_kirhgouogi&q=%22{value}%22
+  types: [alias, email-address, hashtag, name]
+  payWall: Free
+  priority: 9
+  description: A custom search engine for social networks (and then some) curated by Vortimo. We like it!
+- id: '92389'
+  provider: google
+  display: Google Maps
+  url: https://www.google.com/maps?q={value}
+  types: [gps-coordinates]
+  payWall: Free
+  priority: 7
+  description: Google Maps
+- id: '92390'
+  provider: google
+  display: 'Google site:'
+  url: https://www.google.com/?q=site:{value}
+  types: [domain]
+  payWall: Free
+  priority: 5
+  description: 'Google Site:'
+- id: '92391'
+  provider: gravatar
+  display: gravatar
+  url: https://en.gravatar.com/site/check/{value}
+  types: [email-address]
+  payWall: Freemium
+  description: Gravatar is a service for providing globally unique avatars.
+- id: '92394'
+  provider: hunter
+  display: hunter
+  url: https://hunter.io/verify/{value}
+  types: [email-address]
+  payWall: Freemium
+  description: Hunter is the leading solution to find and verify professional email addresses. Start using Hunter and connect with the people that matter for your business
+- id: '92401'
+  provider: IPQS
+  display: IPQS
+  url: https://www.ipqualityscore.com/phone-number-validator/lookup/US/{value:noEncoding}
+  types: [phone-number]
+  payWall: Freemium
+  description: Prevent fraud confidently with IPQS free anti-fraud solution. IPQS fraud prevention tools detect high risk users, clicks, and payments to detect abusive behavior in real-time.
+- id: '92402'
+  provider: IPQS
+  display: IPQS
+  url: https://www.ipqualityscore.com/threat-feeds/malicious-url-scanner/{value}
+  types: [url]
+  payWall: Freemium
+  description: Prevent fraud confidently with IPQS free anti-fraud solution. IPQS fraud prevention tools detect high risk users, clicks, and payments to detect abusive behavior in real-time.
+- id: '92409'
+  provider: OnionLand
+  display: OnionLand
+  url: https://onionlandsearchengine.net/search?q=%22{value}%22
+  types: [alias, name, email-address, ip-address, hashtag]
+  payWall: Free
+  priority: 1
+  description: OnionLand Search - Discover Hidden Services and access to Tor's onion sites
+- id: '92410'
+  provider: OpenCorporates
+  display: OpenCorporates - Companies
+  url: https://opencorporates.com/companies?jurisdiction_code=&q={value}&utf8=%E2%9C%93
+  types: [name]
+  payWall: Free
+  description: Search company records in the largest open database of companies in the world
+- id: '92411'
+  provider: OpenCorporates
+  display: OpenCorporates - Officers
+  url: https://opencorporates.com/officers?jurisdiction_code=&q={value}&utf8=%E2%9C%93
+  types: [name]
+  payWall: Free
+  description: Search corporate officer/director records in the largest open database of companies in the world
+- id: '92418'
+  provider: phone-owner
+  display: phone-owner
+  url: https://phoneowner.com/phone/{value}
+  types: [phone-number]
+  payWall: Free
+  region: US
+  description: Complete US Phone Directory. Phone numbers lookup. Search phones.
+- id: '92419'
+  provider: pipl
+  display: pipl
+  url: https://pipl.com/search/protect/?q={value}&in=5
+  types: [alias, email-address, name]
+  payWall: Paid
+  priority: 1
+  description: Pipl is a place to find the person behind the email address, social username or phone number.
+- id: '92420'
+  provider: pipl
+  display: pipl
+  url: https://pipl.com/search/?phn={value}
+  types: [phone-number]
+  payWall: Paid
+  priority: 1
+  description: Pipl is a place to find the person behind the email address, social username or phone number.
+- id: '92430'
+  provider: SnapChat map
+  display: SnapChat map
+  url: https://map.snapchat.com/@{value:noEncoding},10.45z
+  types: [gps-coordinates]
+  payWall: Free
+  description: SnapChat map shows geotagged chats
+- id: '92433'
+  provider: social-searcher
+  display: social-searcher
+  url: https://www.social-searcher.com/search-users/?ntw=&q6={value}
+  types: [name]
+  payWall: Free
+  description: Start realtime mentions monitoring in social media and web. Quickly analyze what people are saying about your company, brand, product, or service in one easy to use dashboard.
+- id: '92437'
+  provider: syncme
+  display: syncme
+  url: https://sync.me/search/?number={value:stripPhone}
+  types: [phone-number]
+  payWall: Freemium
+  priority: 5
+  description: Sync.ME is the worlds leading social phonebook, with over 1 Billion synchronized phone numbers and corresponding social media profiles.
+- id: '92452'
+  provider: virusTotal
+  display: virusTotal
+  url: https://www.virustotal.com/gui/file/{value}
+  types: [hash]
+  payWall: Free
+  description: Analyze suspicious files and URLs to detect types of malware, automatically share them with the security community.
+- id: '92457'
+  provider: web-mii
+  display: web-mii
+  url: http://webmii.com/people?n="{value}"
+  types: [name]
+  payWall: Free
+  priority: 8
+  description: 'WebMii is a new generation people search engine: find all information about any people and get their visibility score.'
+- id: '92460'
+  provider: wolframAlpha
+  display: wolframAlpha
+  url: https://www.wolframalpha.com/input/?i={value}
+  types: [name]
+  payWall: Free
+  description: Compute answers using Wolfram's breakthrough technology & knowledgebase, relied on by millions of students & professionals. For math, science, nutrition, history, geography, engineering, mathematics, linguistics, sports, finance, music…
+- id: '92462'
+  provider: yandex
+  display: yandex
+  url: https://yandex.com/search/?text=%22{value}%22
+  types: [alias, name, email-address, ip-address, hashtag, url]
+  payWall: Free
+  priority: 4
+  description: Search with Yandex
+- id: '92463'
+  provider: yandex
+  display: Yandex Satellite Map
+  url: https://yandex.com/maps/?text={value}
+  types: [gps-coordinates]
+  payWall: Free
+  priority: 4
+  description: Yandex is a Russian based search engine - the 5th largest in the world.

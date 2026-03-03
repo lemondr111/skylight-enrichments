@@ -1,0 +1,39 @@
+# Image Search
+# Reverse image search engines
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92367'
+  provider: bing
+  display: bing
+  url: https://www.bing.com/images/search?view=detailv2&iss=sbi&FORM=SBIHMP&sbisrc=UrlPaste&q=imgurl:{value}&idpbck=1
+  types: [url]
+  payWall: Free
+  priority: 3
+  description: Bing helps you turn information into action, making it faster and easier to go from searching to doing..
+- id: '92388'
+  provider: google
+  display: google
+  url: https://www.google.com/searchbyimage?sbisrc=google&image_url=&image_url={value}
+  types: [url]
+  payWall: Free
+  priority: 5
+  description: A Google search is always a good idea.
+- id: '92461'
+  provider: yandex
+  display: yandex
+  url: https://yandex.com/images/search?source=collections&rpt=imageview&url={value:noEncoding}
+  types: [url]
+  payWall: Free
+  priority: 7
+  description: Perform a reverse image with Yandex

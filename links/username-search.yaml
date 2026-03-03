@@ -37,3 +37,19 @@
   url: https://www.peekyou.com/username={value}
   types: [alias]
   payWall: Free
+- id: '92451'
+  provider: usersearch
+  display: UserSearch
+  url: https://usersearch.org/results_advanced.php?URL_username={value}
+  types: [alias]
+  payWall: Free
+  priority: 6
+  description: Check your brand, product or username. Search over 575 popular social media networks to instantly secure your brand across the social web.
+- id: '92458'
+  provider: whatismyname
+  display: WhatIsMyName
+  url: https://whatsmyname.app/?q={value}
+  types: [alias]
+  payWall: Free
+  priority: 9
+  description: This tool from osintcombine.com allows you to enumerate usernames across many websites. Works well!

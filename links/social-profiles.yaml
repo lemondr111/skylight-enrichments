@@ -37,3 +37,42 @@
   url: https://x.com/search?q=from%3A{value}&src=typed_query&f=live
   types: [alias]
   payWall: Free
+- id: '92421'
+  provider: pushshift
+  display: Reddit
+  url: https://api.pushshift.io/reddit/search/comment/?author={value}
+  types: [alias]
+  payWall: Free
+  priority: 3
+  description: This site is maintained by Jason Baumgartner and contains various articles relating to big data, social media ingest and analysis and general technology trends
+- id: '92443'
+  provider: tinder
+  display: tinder
+  url: https://www.tinder.com/@{value}
+  types: [alias]
+  payWall: Free
+  description: Tinder is a location-based social search mobile app that allows users to like or dislike other users, and allows users to chat if both parties liked each other in the app. The app is often used as a dating site.
+- id: '92447'
+  provider: twitter
+  display: twitter
+  url: https://twitter.com/{value}
+  types: [alias]
+  payWall: Free
+  priority: 6
+  description: Twitter is a news and social networking service on which users post and interact with messages known as "tweets"
+- id: '92448'
+  provider: twitter
+  display: twitter
+  url: https://twitter.com/search?f=users&vertical=default&q={value}&src=typd
+  types: [name]
+  payWall: Free
+  priority: 6
+  description: Twitter is a news and social networking service on which users post and interact with messages known as "tweets"
+- id: '92449'
+  provider: twitter
+  display: twitter
+  url: https://twitter.com/hashtag/{value}
+  types: [hashtag]
+  payWall: Free
+  priority: 6
+  description: Twitter is a news and social networking service on which users post and interact with messages known as "tweets"

@@ -37,3 +37,45 @@
   url: https://urlhaus.abuse.ch/browse.php?search={value}
   types: [url, domain]
   payWall: Free
+- id: '92377'
+  provider: DShield
+  display: DShield
+  url: https://dshield.org/ipinfo.html?ip={value}
+  types: [ip-address]
+  payWall: Free
+  description: SANS Internet Storm Center
+- id: '92398'
+  provider: IPQS
+  display: IPQS
+  url: https://www.ipqualityscore.com/free-ip-lookup-proxy-vpn-test/lookup/{value}
+  types: [ip-address]
+  payWall: Freemium
+  description: Prevent fraud confidently with IPQS free anti-fraud solution. IPQS fraud prevention tools detect high risk users, clicks, and payments to detect abusive behavior in real-time.
+- id: '92403'
+  provider: ipTracker
+  display: IP Tracker
+  url: https://www.ip-tracker.org/blacklist-check.php?ip={value}
+  types: [ip-address]
+  payWall: Free
+  description: IP Tracker - Lookup, Find, Track, Trace IP Address with powerful IP tracking technology and IP tracer from IP-Tracker.org. IP Locator At Its Best.
+- id: '92438'
+  provider: Talos Intel
+  display: Talos Intel
+  url: https://www.talosintelligence.com/reputation_center/lookup?search={value}
+  types: [ip-address]
+  payWall: Free
+  description: Talos intelligence is a threat intelligence solution from Dell EMC.
+- id: '92453'
+  provider: virusTotal
+  display: virusTotal
+  url: https://www.virustotal.com/gui/ip-address/{value}/relations
+  types: [ip-address]
+  payWall: Free
+  description: Analyze suspicious files and URLs to detect types of malware, automatically share them with the security community.
+- id: '92454'
+  provider: virusTotal
+  display: virusTotal
+  url: https://www.virustotal.com/gui/domain/{value}/relations
+  types: [domain]
+  payWall: Free
+  description: Analyze suspicious files and URLs to detect types of malware, automatically share them with the security community.

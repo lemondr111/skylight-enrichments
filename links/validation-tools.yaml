@@ -25,3 +25,17 @@
   url: https://www.serif.ai/tools/gmail-generator?email={value}
   types: [email-address]
   payWall: Free
+- id: '92378'
+  provider: emailrep
+  display: emailrep
+  url: https://emailrep.io/{value:noEncoding}
+  types: [email-address]
+  payWall: Free
+  description: Illuminate the reputation behind an email address.
+- id: '92399'
+  provider: IPQS
+  display: IPQS
+  url: https://www.ipqualityscore.com/free-email-validation-test/lookup/{value}
+  types: [email-address]
+  payWall: Freemium
+  description: Prevent fraud confidently with IPQS free anti-fraud solution. IPQS fraud prevention tools detect high risk users, clicks, and payments to detect abusive behavior in real-time.

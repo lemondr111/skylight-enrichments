@@ -31,10 +31,13 @@ OUT_FILE  = Path(__file__).parent / "links.json"
 # Filename stem → display category name
 FILENAME_TO_CATEGORY = {
     "archives-press":       "Archives & Press",
+    "data-leaks":           "Data Leaks",
     "environment-science":  "Environment & Science",
     "government-legal":     "Government & Legal",
     "hash-cracking":        "Hash Cracking",
     "historical":           "Historical",
+    "image-analysis":       "Image Analysis",
+    "image-search":         "Image Search",
     "maps":                 "Maps",
     "network-scanning":     "Network Scanning",
     "people-search":        "People Search",
@@ -52,7 +55,7 @@ FILENAME_TO_CATEGORY = {
 KNOWN_TYPES = {
     "name", "alias", "domain", "email-address", "ip-address", "IPV6",
     "phone-number", "hashtag", "url", "gps-coordinates", "crypto-address",
-    "VIN", "hash", "any",
+    "VIN", "hash", "website", "any",
 }
 
 KNOWN_PAYWALLS = {"Free", "Freemium", "Paid"}
@@ -62,9 +65,9 @@ PLACEHOLDER_RE = re.compile(r"\{(\w+)(?:[|:](\w+))?\}")
 
 KNOWN_FORMATTERS = {
     "urlEncode", "base64", "lower", "upper",
-    "stripPunct", "spaceToNothing", "spaceToDash", "spaceToDot",
+    "stripPunct", "spaceToNothing", "spaceToDash", "spaceToDot", "spaceToSlash",
     "userFromEmail", "domainFromEmail", "firstName", "lastName",
-    "noEncoding", "firstIP",
+    "noEncoding", "firstIP", "stripPhone",
 }
 
 # ── Validation ─────────────────────────────────────────────────────────────────

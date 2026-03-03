@@ -103,3 +103,47 @@
   url: https://www.zoomeye.org/searchResult?q={value}
   types: [domain]
   payWall: Free
+- id: '92362'
+  provider: whoxy
+  display: whoxy
+  url: https://www.whoxy.com/{value}
+  types: [domain]
+  payWall: Free
+  description: This WHOIS API returns consistent and well-structured WHOIS data in XML & JSON format
+- id: '92366'
+  provider: bing
+  display: Bing RevDNS
+  url: https://www.bing.com/search?q=ip%3A{value}
+  types: [ip-address]
+  payWall: Free
+  priority: 3
+  description: Search Bing for other websites hosted on this IP
+- id: '92376'
+  provider: DNSDumpster
+  display: DNSDumpster
+  url: https://dnsdumpster.com/?target={value}
+  types: [domain]
+  payWall: Free
+  description: DNSdumpster.com is a FREE domain research tool that can discover hosts related to a domain
+- id: '92395'
+  provider: hunter
+  display: hunter
+  url: https://hunter.io/search/{value:domainFromEmail}
+  types: [domain]
+  payWall: Freemium
+  priority: 3
+  description: Hunter is the leading solution to find and verify professional email addresses. Start using Hunter and connect with the people that matter for your business
+- id: '92400'
+  provider: IPQS domain
+  display: IPQS — Domain Reputation (extracted from email)
+  url: https://www.ipqualityscore.com/domain-reputation/{value:domainFromEmail}
+  types: [email-address]
+  payWall: Freemium
+  description: Checks the reputation of the domain part of the email address
+- id: '92427'
+  provider: security-trails
+  display: security-trails
+  url: https://securitytrails.com/list/by-email/{value}
+  types: [email-address]
+  payWall: Free
+  description: SecurityTrails allows you to search complete data for current and historical mapping of internet assets.

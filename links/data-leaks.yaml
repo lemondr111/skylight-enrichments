@@ -1,0 +1,74 @@
+# Data Leaks
+# Data breach search, paste sites, OSINT aggregators
+#
+# Fields:
+#   id       — numeric string, from upstream source
+#   provider — short source name (e.g. shodan, twitter)
+#   display  — human-readable label
+#   url      — URL template with {value}, {value:formatter} substitutions
+#   types    — list of input types this link accepts
+#   payWall  — Free | Freemium | Paid
+#   region   — (optional) region hint, defaults to Global
+#   priority — (optional) sort weight, higher = shown first, defaults to 0
+#   description — (optional) freeform note
+#   autorun  — (optional) true to run automatically, defaults to false
+
+- id: '92368'
+  provider: BuiltWith
+  display: BuiltWith
+  url: https://builtwith.com/relationships/{value}
+  types: [domain, website]
+  payWall: Free
+  description: BuiltWith is a website profiler, lead generation, competitive analysis and business intelligence tool providing technology adoption, ecommerce data and usage analytics for the internet.
+- id: '92374'
+  provider: dehashed
+  display: dehashed
+  url: https://dehashed.com/search?query={value}
+  types: [email-address]
+  payWall: Freemium
+  priority: 6
+  description: Dehashed is a data-mining and hacked database search engine.
+- id: '92393'
+  provider: have-i-been-pwned
+  display: Have I Been Pwned — Account Lookup
+  url: https://haveibeenpwned.com/account/{value}
+  types: [email-address]
+  payWall: Free
+  description: HIBP is a free resource for anyone to quickly assess if they may have been put at risk due to an online account of theirs having been compromised or "pwned" in a data breach.
+- id: '92396'
+  provider: Intel-x
+  display: Intel-X
+  url: https://intelx.io/?s={value}
+  types: [email-address, domain, name, alias]
+  payWall: Freemium
+  priority: 3
+  description: You can use Intelligence X to perform any kind of open source intelligence. They make the deepest parts of the internet accessible with a few clicks.
+- id: '92408'
+  provider: occrp
+  display: OCRRP
+  url: https://data.occrp.org/search?q={value}
+  types: [email-address]
+  payWall: Freemium
+  priority: 1
+  description: OCCRP Data is a place to find public records and data leaks.
+- id: '92413'
+  provider: pastebin
+  display: pastebin
+  url: https://pastebin.com/search?q={value}
+  types: [email-address]
+  payWall: Free
+  description: Pastebin.com is the number one paste tool since 2002. Pastebin is a website where you can store text online for a set period of time.
+- id: '92425'
+  provider: ScamSearch
+  display: ScamSearch
+  url: https://scamsearch.io/search_report?searchoption=all&search={value}
+  types: [email-address]
+  payWall: Free
+  description: Search known scams by Profile Picture, Email, Username, Pseudo Name, Phone Number or crypto address.
+- id: '92455'
+  provider: waybackMachine
+  display: Archive.org [Get]
+  url: https://web.archive.org/web/*/{value:noEncoding}
+  types: [domain]
+  payWall: Free
+  description: Find all indexed copies on Archive.org (WayBack Machine).
