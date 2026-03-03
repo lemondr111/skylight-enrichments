@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "updatedAt": "2026-03-01",
+  "updatedAt": "2026-03-03T12:33:17Z",
   "links": [
     {
       "id": "92187",
@@ -37,23 +37,6 @@
       "autorun": false
     },
     {
-      "id": "92189",
-      "provider": "webcitation",
-      "display": "Webcitation Archive Snapshots",
-      "icon": "https://www.google.com/s2/favicons?domain=www.webcitation.org&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.webcitation.org/query?url={value}",
-      "category": "Archives & Press",
-      "priority": 0,
-      "types": [
-        "domain",
-        "url"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92190",
       "provider": "archive",
       "display": "Archive.is Snapshots",
@@ -71,23 +54,6 @@
       "autorun": false
     },
     {
-      "id": "92191",
-      "provider": "archive.wikiwix",
-      "display": "Arquivo.pt Snapshots",
-      "icon": "https://www.google.com/s2/favicons?domain=archive.wikiwix.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "http://archive.wikiwix.com/cache/index2.php?url={value}",
-      "category": "Archives & Press",
-      "priority": 0,
-      "types": [
-        "url",
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92192",
       "provider": "archive-it",
       "display": "Archive-it.org Mentions",
@@ -96,23 +62,6 @@
       "region": "Global",
       "payWall": "Free",
       "url": "https://archive-it.org/explore?q={value}",
-      "category": "Archives & Press",
-      "priority": 0,
-      "types": [
-        "domain",
-        "url"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92193",
-      "provider": "trove.nla.gov",
-      "display": "Troove Snapshots",
-      "icon": "https://www.google.com/s2/favicons?domain=trove.nla.gov.au&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://trove.nla.gov.au/search/category/websites?keyword={value}",
       "category": "Archives & Press",
       "priority": 0,
       "types": [
@@ -216,38 +165,6 @@
       "priority": 0,
       "types": [
         "alias"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92200",
-      "provider": "truepeoplesearch",
-      "display": "True People Search",
-      "icon": "https://www.google.com/s2/favicons?domain=www.truepeoplesearch.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.truepeoplesearch.com/resultemail?email={value}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "email-address"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92201",
-      "provider": "thatsthem",
-      "display": "ThatsThem",
-      "icon": "https://www.google.com/s2/favicons?domain=thatsthem.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://thatsthem.com/email/{value}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "email-address"
       ],
       "autorun": false
     },
@@ -525,22 +442,6 @@
       "autorun": false
     },
     {
-      "id": "92219",
-      "provider": "google",
-      "display": "Google - Logs files",
-      "icon": "https://www.google.com/s2/favicons?domain=www.google.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.google.com/search?q=site:{value}%20ext:log",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92220",
       "provider": "google",
       "display": "Google - Phpinfo files",
@@ -549,38 +450,6 @@
       "region": "Global",
       "payWall": "Free",
       "url": "https://www.google.com/search?q=site:{value}%20ext:php%20intitle:phpinfo%20%27published%20by%20the%20PHP%20Group%27",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92221",
-      "provider": "google",
-      "display": "Google - Open Redirect",
-      "icon": "https://www.google.com/s2/favicons?domain=www.google.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.google.com/search?q=site:{value}%20inurl:redir%20",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92222",
-      "provider": "google",
-      "display": "Google - Config Files",
-      "icon": "https://www.google.com/s2/favicons?domain=www.google.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.google.com/search?q=site:{value}%20ext:xml%20",
       "category": "Search & Files",
       "priority": 0,
       "types": [
@@ -749,55 +618,6 @@
       "autorun": false
     },
     {
-      "id": "92233",
-      "provider": "decrypt",
-      "display": "Decrypt Tools - MD5 Decryption",
-      "icon": "https://www.google.com/s2/favicons?domain=decrypt.tools&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://decrypt.tools/client-server/decrypt?type=md5&{value}",
-      "category": "Hash Cracking",
-      "priority": 0,
-      "types": [
-        "hash"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92234",
-      "provider": "decrypt",
-      "display": "Decrypt Tools - Sha1 Decryption",
-      "icon": "https://www.google.com/s2/favicons?domain=decrypt.tools&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://decrypt.tools/client-server/decrypt?type=sha1&string={value}",
-      "category": "Hash Cracking",
-      "priority": 0,
-      "types": [
-        "hash"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92246",
-      "provider": "zoomeye",
-      "display": "ZoomEye - IP Lookup",
-      "icon": "https://www.google.com/s2/favicons?domain=www.zoomeye.org&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "\thttps://www.zoomeye.org/searchResult?q={value:firstIP}",
-      "category": "Network Scanning",
-      "priority": 0,
-      "types": [
-        "IPV6",
-        "ip-address"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92247",
       "provider": "whois",
       "display": "WHOIS - IP Lookup",
@@ -877,7 +697,6 @@
       "category": "WHOIS & DNS",
       "priority": 0,
       "types": [
-        "IPV6",
         "ip-address"
       ],
       "autorun": false
@@ -913,40 +732,6 @@
       "types": [
         "ip-address",
         "IPV6"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92254",
-      "provider": "search.odin",
-      "display": "ODIN - IP Lookup",
-      "icon": "https://www.google.com/s2/favicons?domain=search.odin.io&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://search.odin.io/hosts?query={value}",
-      "category": "Network Scanning",
-      "priority": 0,
-      "types": [
-        "IPV6",
-        "ip-address"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92255",
-      "provider": "hunter",
-      "display": "Hunter How IP Lookup",
-      "icon": "https://www.google.com/s2/favicons?domain=hunter.how&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://hunter.how/list?searchValue=ip%3D%3D%22{value}%22",
-      "category": "Network Scanning",
-      "priority": 0,
-      "types": [
-        "IPV6",
-        "ip-address"
       ],
       "autorun": false
     },
@@ -1076,22 +861,6 @@
       "autorun": false
     },
     {
-      "id": "92264",
-      "provider": "newspaperarchive",
-      "display": "Newspaper Archive - search since 1700",
-      "icon": "https://www.google.com/s2/favicons?domain=newspaperarchive.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://newspaperarchive.com/tags/?pf={value:firstName}&pl={value:lastName}/",
-      "category": "Archives & Press",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92265",
       "provider": "nationalarchives.gov",
       "display": "United Kingdom national Archive Search",
@@ -1120,23 +889,6 @@
       "priority": 0,
       "types": [
         "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92267",
-      "provider": "filepursuit",
-      "display": "FilePursuit - Open Directories Search",
-      "icon": "https://www.google.com/s2/favicons?domain=filepursuit.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://filepursuit.com/pursuit?q={value}&type=all",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "name",
-        "alias"
       ],
       "autorun": false
     },
@@ -1356,38 +1108,6 @@
       "autorun": false
     },
     {
-      "id": "92282",
-      "provider": "beenverified",
-      "display": "Been Verified - USA White Pages Lookup",
-      "icon": "https://www.google.com/s2/favicons?domain=www.beenverified.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.beenverified.com/people/{value:firstName}-{value:LastName}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92283",
-      "provider": "blockshopper",
-      "display": "BlockShopper - Recent Properties Sales",
-      "icon": "https://www.google.com/s2/favicons?domain=blockshopper.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://blockshopper.com/search?type=names&q={value:firstName}+{value:LastName}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92284",
       "provider": "clustrmaps",
       "display": "ClustrMaps - USA Whitepages Lookup",
@@ -1395,23 +1115,7 @@
       "description": "",
       "region": "Global",
       "payWall": "Free",
-      "url": "https://clustrmaps.com/persons/{value:firstName}-{value:LastName",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92285",
-      "provider": "cse.google",
-      "display": "Locate Family Google CSE",
-      "icon": "https://www.google.com/s2/favicons?domain=cse.google.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://cse.google.com/cse?cx=partner-pub-7233843800519946:6667570044&ie=UTF-8&q={value:firstName}+{value:LastName} Archive.org - USA Goverment (.gov) PDF Mentions\tname\t\t",
+      "url": "https://clustrmaps.com/persons/{value:firstName}-{value:lastName}",
       "category": "People Search",
       "priority": 0,
       "types": [
@@ -1596,22 +1300,6 @@
       "autorun": false
     },
     {
-      "id": "92301",
-      "provider": "cyberbackgroundchecks",
-      "display": "CyberBackgroundChecks - People Search",
-      "icon": "https://www.google.com/s2/favicons?domain=www.cyberbackgroundchecks.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.cyberbackgroundchecks.com/phone/{value}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "phone-number"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92302",
       "provider": "flickr",
       "display": "Flickr Search",
@@ -1659,7 +1347,6 @@
       "category": "Social & Video",
       "priority": 0,
       "types": [
-        "alias",
         "hashtag",
         "name"
       ],
@@ -1906,22 +1593,6 @@
       "autorun": false
     },
     {
-      "id": "92319",
-      "provider": "{value}.tumblr",
-      "display": "Tumblr Profile",
-      "icon": "https://www.google.com/s2/favicons?domain={value}.tumblr.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://{value}.tumblr.com/",
-      "category": "Social Profiles",
-      "priority": 0,
-      "types": [
-        "alias"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92320",
       "provider": "instagram",
       "display": "Instagram - Hashtag Search",
@@ -1934,22 +1605,6 @@
       "priority": 0,
       "types": [
         "hashtag"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92321",
-      "provider": "facebook",
-      "display": "Facebook - People Search",
-      "icon": "https://www.google.com/s2/favicons?domain=www.facebook.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.facebook.com/search/people/?q={value}&epa=SERP_TAB",
-      "category": "Social & Video",
-      "priority": 0,
-      "types": [
-        "name"
       ],
       "autorun": false
     },
@@ -1982,8 +1637,7 @@
       "category": "Social & Video",
       "priority": 0,
       "types": [
-        "alias",
-        "name"
+        "alias"
       ],
       "autorun": false
     },
@@ -2161,38 +1815,6 @@
       "autorun": false
     },
     {
-      "id": "92334",
-      "provider": "",
-      "display": "UNFURL - URL Paramaters Analysis",
-      "icon": "",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https:// dfir.blog /unfurl/?url={value}",
-      "category": "Validation & Tools",
-      "priority": 0,
-      "types": [
-        "url"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92335",
-      "provider": "carbondate.cs.odu",
-      "display": "Carbon Dating - Webpage Creation Date",
-      "icon": "https://www.google.com/s2/favicons?domain=carbondate.cs.odu.edu&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://carbondate.cs.odu.edu/#{value}",
-      "category": "Validation & Tools",
-      "priority": 0,
-      "types": [
-        "url"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92336",
       "provider": "filmot",
       "display": "Filmot - YouTube 1.3B+ subtitles search",
@@ -2286,25 +1908,6 @@
       "autorun": false
     },
     {
-      "id": "92341",
-      "provider": "playeur",
-      "display": "Playeur Search",
-      "icon": "https://www.google.com/s2/favicons?domain=playeur.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://playeur.com/search?q={value}",
-      "category": "Social & Video",
-      "priority": 0,
-      "types": [
-        "alias",
-        "name",
-        "domain",
-        "hashtag"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92342",
       "provider": "tiktok",
       "display": "TikTok Search",
@@ -2372,22 +1975,6 @@
       "autorun": false
     },
     {
-      "id": "92349",
-      "provider": "seositecheckup",
-      "display": "Seositechekup - Traffic Analyze",
-      "icon": "https://www.google.com/s2/favicons?domain=seositecheckup.com&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://seositecheckup.com/seo-audit/{value}",
-      "category": "WHOIS & DNS",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92350",
       "provider": "zoomeye",
       "display": "ZoomEye - Domain Lookup",
@@ -2437,22 +2024,6 @@
       "autorun": false
     },
     {
-      "id": "92353",
-      "provider": "greynoise",
-      "display": "GreyNoise - Domain Lookup",
-      "icon": "https://www.google.com/s2/favicons?domain=www.greynoise.io&sz=32",
-      "description": "",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.greynoise.io/viz/ip/{value}",
-      "category": "Threat Intelligence",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92354",
       "provider": "whois.domaintools",
       "display": "Domaintools - Whois Lookup",
@@ -2492,7 +2063,7 @@
       "description": "",
       "region": "Global",
       "payWall": "Free",
-      "url": "https://dnslytics.com/ip/{value}",
+      "url": "https://dnslytics.com/domain/{value}",
       "category": "WHOIS & DNS",
       "priority": 0,
       "types": [
@@ -2579,20 +2150,6 @@
       "types": [
         "domain"
       ],
-      "autorun": false
-    },
-    {
-      "id": "92363",
-      "provider": "analyzeid",
-      "display": "AnalyzeID",
-      "icon": "https://www.google.com/s2/favicons?domain=analyzeid.com",
-      "description": "Find Other Websites Owned By The Same Person/Org",
-      "region": "Global",
-      "payWall": "Limited",
-      "url": "https://analyzeid.com/id/{value}",
-      "category": "Data Leaks",
-      "priority": 0,
-      "types": [],
       "autorun": false
     },
     {
@@ -2728,38 +2285,6 @@
       "autorun": false
     },
     {
-      "id": "92372",
-      "provider": "Defastra",
-      "display": "Defastra",
-      "icon": "https://www.google.com/s2/favicons?domain=defastra.com",
-      "description": "With years of research and study of the temporary email ecosystem, Defastra has uncovered numerous identifiable elements common to most disposable and fraudulent email addresses.",
-      "region": "Global",
-      "payWall": "Paid",
-      "url": "https://dashboard.defastra.com/tools/email_online_presence_lookup/{value}",
-      "category": "Search & Files",
-      "priority": 4,
-      "types": [
-        "email-address"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92373",
-      "provider": "Defastra",
-      "display": "Defastra",
-      "icon": "https://www.google.com/s2/favicons?domain=defastra.com",
-      "description": "We don\\'t let any risky or disposable phone number slip through our checks. Our solution covers everything from the simplest to the most sophisticated disposable phone number scheme",
-      "region": "Global",
-      "payWall": "Paid",
-      "url": "https://dashboard.defastra.com/tools/phone_online_presence_lookup/{value}",
-      "category": "Search & Files",
-      "priority": 4,
-      "types": [
-        "phone-number"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92374",
       "provider": "dehashed",
       "display": "dehashed",
@@ -2888,22 +2413,6 @@
       "autorun": false
     },
     {
-      "id": "92382",
-      "provider": "foller",
-      "display": "Foller",
-      "icon": "https://www.google.com/s2/favicons?domain=foller.me",
-      "description": "Foller.me is a Twitter analytics application that gives you rich insights about any public Twitter profile. We gather near real-time data about topics, mentions, hashtags, followers, location and more!",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://foller.me/{value}",
-      "category": "Social & Video",
-      "priority": 0,
-      "types": [
-        "alias"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92383",
       "provider": "follower-wonk",
       "display": "Follower Wonk",
@@ -2916,22 +2425,6 @@
       "priority": 0,
       "types": [
         "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92384",
-      "provider": "FotoForensics",
-      "display": "FotoForensics",
-      "icon": "https://www.google.com/s2/favicons?domain=fotoforensics.com",
-      "description": "FotoForensics provides budding researchers and professional investigators access to cutting-edge tools for digital photo forensics.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://fotoforensics.com/upload-url.php?api=Vortimo&url={value}",
-      "category": "Image Analysis",
-      "priority": 0,
-      "types": [
-        "url"
       ],
       "autorun": false
     },
@@ -3053,22 +2546,6 @@
       "priority": 0,
       "types": [
         "email-address"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92392",
-      "provider": "Hash toolkit",
-      "display": "Hash toolkit",
-      "icon": "https://www.google.com/s2/favicons?domain=hashtoolkit.com",
-      "description": "Hash Toolkit allows you to input an hash and search for its decrypted state in our database",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://hashtoolkit.com/decrypt-hash/?hash={value}",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "hash"
       ],
       "autorun": false
     },
@@ -3247,38 +2724,6 @@
       "autorun": false
     },
     {
-      "id": "92404",
-      "provider": "john-doe",
-      "display": "john-doe",
-      "icon": "https://www.google.com/s2/favicons?domain=johndoe.com",
-      "description": "Look up contact information and public records of adults in the US using the most comprehensive online free people search directory and reverse phone number lookup",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://johndoe.com/people/{value}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92405",
-      "provider": "knowem",
-      "display": "knowem",
-      "icon": "https://www.google.com/s2/favicons?domain=knowem.com",
-      "description": "Check your brand, product or username. Search over 575 popular social media networks to instantly secure your brand across the social web.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://knowem.com/checksocialnames.php?u={value}",
-      "category": "Username Search",
-      "priority": 1,
-      "types": [
-        "alias"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92406",
       "provider": "melissa",
       "display": "melissa",
@@ -3291,22 +2736,6 @@
       "priority": 0,
       "types": [
         "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92407",
-      "provider": "Exif",
-      "display": "Exif",
-      "icon": "https://www.google.com/s2/favicons?domain=metapicz.com",
-      "description": "Meta Picsz is an online service to view meta data on images.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "http://metapicz.com/#landing?imgsrc={value}",
-      "category": "Image Analysis",
-      "priority": 0,
-      "types": [
-        "url"
       ],
       "autorun": false
     },
@@ -3350,9 +2779,9 @@
     {
       "id": "92410",
       "provider": "OpenCorporates",
-      "display": "OpenCorporates",
+      "display": "OpenCorporates - Companies",
       "icon": "https://www.google.com/s2/favicons?domain=opencorporates.com",
-      "description": "Largest open database of companies in the world",
+      "description": "Search company records in the largest open database of companies in the world",
       "region": "Global",
       "payWall": "Free",
       "url": "https://opencorporates.com/companies?jurisdiction_code=&q={value}&utf8=%E2%9C%93",
@@ -3366,9 +2795,9 @@
     {
       "id": "92411",
       "provider": "OpenCorporates",
-      "display": "OpenCorporates",
+      "display": "OpenCorporates - Officers",
       "icon": "https://www.google.com/s2/favicons?domain=opencorporates.com",
-      "description": "Largest open database of companies in the world",
+      "description": "Search corporate officer/director records in the largest open database of companies in the world",
       "region": "Global",
       "payWall": "Free",
       "url": "https://opencorporates.com/officers?jurisdiction_code=&q={value}&utf8=%E2%9C%93",
@@ -3376,22 +2805,6 @@
       "priority": 0,
       "types": [
         "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92412",
-      "provider": "OSINT Tech (beta)",
-      "display": "OSINT Tech (beta)",
-      "icon": "https://www.google.com/s2/favicons?domain=osint.technology",
-      "description": "Search Twitter (and more) and display awesome statistics and visualizations about the meta data mined.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://app.osint.technology/Twitter/?query=from:{value}",
-      "category": "Search & Files",
-      "priority": 7,
-      "types": [
-        "alias"
       ],
       "autorun": false
     },
@@ -3412,22 +2825,6 @@
       "autorun": false
     },
     {
-      "id": "92414",
-      "provider": "people-finder",
-      "display": "people-finder",
-      "icon": "https://www.google.com/s2/favicons?domain=peoplefinder.com",
-      "description": "Use PeopleFinder's free white pages database that makes billions of people search records easily accessible to anyone at no cost.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.peoplefinder.com/people-search/{value:spaceToDash}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92415",
       "provider": "people-looker",
       "display": "people-looker",
@@ -3440,38 +2837,6 @@
       "priority": 0,
       "types": [
         "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92416",
-      "provider": "people-search-now",
-      "display": "people-search-now",
-      "icon": "https://www.google.com/s2/favicons?domain=peoplesearchnow.com",
-      "description": "Use People Search Now to search for people by name, address, or reverse phone lookup. Our public records search is fast and easy to use. Start free now!",
-      "region": "REGION_TYPES.US",
-      "payWall": "Free",
-      "url": "https://www.peoplesearchnow.com/person/{value}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92417",
-      "provider": "pgp-keyserver-io",
-      "display": "PGP (KeyServer)",
-      "icon": "https://www.google.com/s2/favicons?domain=key-server.io",
-      "description": "OpenPGP Keyserver.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://pgp.mit.edu/pks/lookup?search={value}&hash=on&fingerprint=on&op=vindex",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "email-address"
       ],
       "autorun": false
     },
@@ -3558,22 +2923,6 @@
       "autorun": false
     },
     {
-      "id": "92424",
-      "provider": "RiskIQ",
-      "display": "RiskIQ",
-      "icon": "https://www.google.com/s2/favicons?domain=riskiq.com",
-      "description": "RiskIQ extend cybersecurity outside the firewall by discovering unknowns and investigating threats across their digital attack surface.",
-      "region": "Global",
-      "payWall": "Limited",
-      "url": "https://community.riskiq.com/research?query={value}",
-      "category": "Threat Intelligence",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92425",
       "provider": "ScamSearch",
       "display": "ScamSearch",
@@ -3638,22 +2987,6 @@
       "autorun": false
     },
     {
-      "id": "92429",
-      "provider": "Skypli",
-      "display": "Skype",
-      "icon": "https://www.google.com/s2/favicons?domain=skype.com",
-      "description": "Skype search engine.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.skypli.com/search/{value}",
-      "category": "Social Profiles",
-      "priority": 0,
-      "types": [
-        "alias"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92430",
       "provider": "SnapChat map",
       "display": "SnapChat map",
@@ -3666,38 +2999,6 @@
       "priority": 0,
       "types": [
         "gps-coordinates"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92431",
-      "provider": "snapdex",
-      "display": "snapdex",
-      "icon": "https://static.listionary.com/core/img/snapdex-favicon.png",
-      "description": "Find the best Snapchat names to add with Snapdex, a searchable database of Snapchat usernames including their snaps, snapcodes and the emojis of celebrity accounts.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.snapdex.com/list?search={value}",
-      "category": "Social Profiles",
-      "priority": 0,
-      "types": [
-        "alias"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92432",
-      "provider": "social-links",
-      "display": "social-links",
-      "icon": "https://www.google.com/s2/favicons?domain=mtg-bi.com",
-      "description": "Investigate data about people, companies, events, places, and connections. Find personal and business affiliations. Search social media traces, opinions, various corporate and network data. No programming skills needed. Start with a phone number, e-mail, URL, name, photo or Alias. Easily visualize your data in 2 minutes no matter how big it is. With Social Links you get access to Facebook, Twitter, Instagram, Linked In, DarkWeb, O\u0421\u0421RP, Offshores Leaks, and 40+ other sources together with 1000+ search methods.",
-      "region": "Global",
-      "payWall": "PAYWALL_TYPES.Account",
-      "url": "https://socialbearing.com/search/user/{value}",
-      "category": "Search & Files",
-      "priority": 6,
-      "types": [
-        "alias"
       ],
       "autorun": false
     },
@@ -3734,39 +3035,6 @@
       "autorun": false
     },
     {
-      "id": "92435",
-      "provider": "spyonweb",
-      "display": "spyonweb",
-      "icon": "https://www.google.com/s2/favicons?domain=spyonweb.com",
-      "description": "We take the information from public sources, then structure it for your quick and convenient search for the websites that probably belong to the same owner.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://spyonweb.com/{value}",
-      "category": "Data Leaks",
-      "priority": 0,
-      "types": [
-        "domain",
-        "website"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92436",
-      "provider": "spytox",
-      "display": "spytox",
-      "icon": "https://www.google.com/s2/favicons?domain=spytox.com",
-      "description": "SPYTOX is world's most trusted people search platform. Search people, phone numbers, addresses and more. Find people instantly.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.spytox.com/people/search?email={value}",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "email-address"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92437",
       "provider": "syncme",
       "display": "syncme",
@@ -3799,70 +3067,6 @@
       "autorun": false
     },
     {
-      "id": "92439",
-      "provider": "thats-them",
-      "display": "thats-them",
-      "icon": "https://www.google.com/s2/favicons?domain=thatsthem.com",
-      "description": "ThatsThem is 100% Free People Search providing phone number, email address, and postal address so you can find the person you\u2019re looking for.",
-      "region": "REGION_TYPES.US",
-      "payWall": "Free",
-      "url": "http://thatsthem.com/name/{value:spaceToDash}",
-      "category": "People Search",
-      "priority": 0,
-      "types": [
-        "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92440",
-      "provider": "ThreatCrowd",
-      "display": "ThreatCrowd",
-      "icon": "https://www.google.com/s2/favicons?domain=alienvault.com",
-      "description": "ThreatCrowd is a search engine for threats, powered by AlienVault.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://threatcrowd.org/domain.php?domain={value}",
-      "category": "Threat Intelligence",
-      "priority": 0,
-      "types": [
-        "domain"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92441",
-      "provider": "ThreatCrowd",
-      "display": "ThreatCrowd",
-      "icon": "https://www.google.com/s2/favicons?domain=alienvault.com",
-      "description": "ThreatCrowd is a search engine for threats, powered by AlienVault.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://threatcrowd.org/ip.php?ip={value}",
-      "category": "Threat Intelligence",
-      "priority": 0,
-      "types": [
-        "ip-address"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92442",
-      "provider": "tin-eye",
-      "display": "tin-eye",
-      "icon": "https://www.google.com/s2/favicons?domain=tineye.com",
-      "description": "Perform a reverse image search using the TinEye service",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://tineye.com/search/?pluginver=chrome-1.3.0&url={value}",
-      "category": "Image Search",
-      "priority": 0,
-      "types": [
-        "url"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92443",
       "provider": "tinder",
       "display": "tinder",
@@ -3891,22 +3095,6 @@
       "priority": 0,
       "types": [
         "name"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92446",
-      "provider": "tumblr",
-      "display": "tumblr",
-      "icon": "https://www.google.com/s2/favicons?domain=tumblr.com",
-      "description": "Tumblr is a microblogging and social networking website",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "http://{value}.tumblr.com/",
-      "category": "Social Profiles",
-      "priority": 0,
-      "types": [
-        "alias"
       ],
       "autorun": false
     },
@@ -3959,22 +3147,6 @@
       "autorun": false
     },
     {
-      "id": "92450",
-      "provider": "URLVoid",
-      "display": "URLVoid",
-      "icon": "https://www.google.com/s2/favicons?domain=urlvoid.com",
-      "description": "URLVoid helps you detect potentially malicious websites, works on domains, websites and URLs. Checks against a long list of badness.",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://www.urlvoid.com/scan/{value}",
-      "category": "Threat Intelligence",
-      "priority": 0,
-      "types": [
-        "website"
-      ],
-      "autorun": false
-    },
-    {
       "id": "92451",
       "provider": "usersearch",
       "display": "UserSearch",
@@ -3985,7 +3157,9 @@
       "url": "https://usersearch.org/results_advanced.php?URL_username={value}",
       "category": "Username Search",
       "priority": 6,
-      "types": [],
+      "types": [
+        "alias"
+      ],
       "autorun": false
     },
     {
@@ -4049,22 +3223,6 @@
       "priority": 0,
       "types": [
         "domain"
-      ],
-      "autorun": false
-    },
-    {
-      "id": "92456",
-      "provider": "waybackMachineSave",
-      "display": "Archive.org [Put]",
-      "icon": "https://www.google.com/s2/favicons?domain=archive.org",
-      "description": "Saves a public page to the WayBack Machine (Archive.org) for later retrieval",
-      "region": "Global",
-      "payWall": "Free",
-      "url": "https://web.archive.org/save/{value:noEncoding}",
-      "category": "Search & Files",
-      "priority": 0,
-      "types": [
-        "url"
       ],
       "autorun": false
     },
