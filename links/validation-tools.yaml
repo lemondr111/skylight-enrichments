@@ -13,12 +13,6 @@
 #   description — (optional) freeform note
 #   autorun  — (optional) true to run automatically, defaults to false
 
-- id: '92335'
-  provider: carbondate.cs.odu
-  display: Carbon Dating - Webpage Creation Date
-  url: https://carbondate.cs.odu.edu/#{value}
-  types: [url]
-  payWall: Free
 - id: '92203'
   provider: mailmeteor
   display: MailMeteor - Email Validation
@@ -30,10 +24,4 @@
   display: Serif.ai - Email Variations Generator
   url: https://www.serif.ai/tools/gmail-generator?email={value}
   types: [email-address]
-  payWall: Free
-- id: '92334'
-  provider: ''
-  display: UNFURL - URL Paramaters Analysis
-  url: https:// dfir.blog /unfurl/?url={value}
-  types: [url]
   payWall: Free

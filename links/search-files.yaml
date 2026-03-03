@@ -31,12 +31,6 @@
   url: https://www.eyedex.org/search/?q={value}
   types: [name, alias]
   payWall: Free
-- id: '92267'
-  provider: filepursuit
-  display: FilePursuit - Open Directories Search
-  url: https://filepursuit.com/pursuit?q={value}&type=all
-  types: [name, alias]
-  payWall: Free
 - id: '92218'
   provider: google
   display: Google - .git folder
@@ -54,12 +48,6 @@
   display: Google - CSV, Excel, Database Search
   url: https://www.google.com/search?q=filetype%253Axls%2BOR%2Bfiletype%253Acsv%2BOR%2Bfiletype%253Axlsx%2BOR%2Bfiletype%253Asql%2Bsite%253A{value}
   types: [alias, name, domain]
-  payWall: Free
-- id: '92222'
-  provider: google
-  display: Google - Config Files
-  url: https://www.google.com/search?q=site:{value}%20ext:xml%20
-  types: [domain]
   payWall: Free
 - id: '92274'
   provider: google
@@ -103,22 +91,10 @@
   url: https://www.google.com/search?q=site%3A{value}%20ext%3Alog%20%7C%20ext%3Atxt%20%7C%20ext%3Aconf%20%7C%20ext%3Acnf%20%7C%20ext%3Aini%20%7C%20ext%3Aenv%20%7C%20ext%3Ash%20%7C%20ext%3Abak%20%7C%20ext%3Abackup%20%7C%20ext%3Aswp%20%7C%20ext%3Aold%20%7C%20ext%3A~%20%7C%20ext%3Agit%20%7C%20ext%3Asvn%20%7C%20ext%3Ahtpasswd%20%7C%20ext%3Ahtaccess%20%7C%20ext%3A
   types: [domain]
   payWall: Free
-- id: '92219'
-  provider: google
-  display: Google - Logs files
-  url: https://www.google.com/search?q=site:{value}%20ext:log
-  types: [domain]
-  payWall: Free
 - id: '92216'
   provider: google
   display: Google - Open Directories Search without Subdomains
   url: https://www.google.com/search?q=intitle%253A%2522index%2Bof%2522%2Bsite%253A{value}
-  types: [domain]
-  payWall: Free
-- id: '92221'
-  provider: google
-  display: Google - Open Redirect
-  url: https://www.google.com/search?q=site:{value}%20inurl:redir%20
   types: [domain]
   payWall: Free
 - id: '92213'

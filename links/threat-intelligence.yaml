@@ -13,12 +13,6 @@
 #   description — (optional) freeform note
 #   autorun  — (optional) true to run automatically, defaults to false
 
-- id: '92353'
-  provider: greynoise
-  display: GreyNoise - Domain Lookup
-  url: https://www.greynoise.io/viz/ip/{value}
-  types: [domain]
-  payWall: Free
 - id: '92249'
   provider: greynoise
   display: GreyNoise - IP Lookup

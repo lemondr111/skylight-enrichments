@@ -22,7 +22,7 @@
 - id: '92357'
   provider: dnslytics
   display: DNSLytics - Domain Lookup
-  url: https://dnslytics.com/ip/{value}
+  url: https://dnslytics.com/domain/{value}
   types: [domain]
   payWall: Free
 - id: '92252'
@@ -61,17 +61,11 @@
   url: "\thttps://www.reversewhois.io/?searchterm={value}"
   types: [domain]
   payWall: Free
-- id: '92349'
-  provider: seositecheckup
-  display: Seositechekup - Traffic Analyze
-  url: https://seositecheckup.com/seo-audit/{value}
-  types: [domain]
-  payWall: Free
 - id: '92251'
   provider: viewdns
   display: ViewDNS - Reverse IP Lookup
   url: https://viewdns.info/reverseip/?host={value}&t=1
-  types: [IPV6, ip-address]
+  types: [ip-address]
   payWall: Free
 - id: '92355'
   provider: viewdns

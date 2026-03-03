@@ -31,12 +31,6 @@
   url: https://www.instagram.com/{value}
   types: [alias]
   payWall: Free
-- id: '92319'
-  provider: '{value}.tumblr'
-  display: Tumblr Profile
-  url: https://{value}.tumblr.com/
-  types: [alias]
-  payWall: Free
 - id: '92315'
   provider: x
   display: X - last tweets from user

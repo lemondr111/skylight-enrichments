@@ -35,13 +35,7 @@
   provider: disboard
   display: Disboard - Discord Servers Search
   url: https://disboard.org/search?keyword={value}
-  types: [alias, name]
-  payWall: Free
-- id: '92321'
-  provider: facebook
-  display: Facebook - People Search
-  url: https://www.facebook.com/search/people/?q={value}&epa=SERP_TAB
-  types: [name]
+  types: [alias]
   payWall: Free
 - id: '92336'
   provider: filmot
@@ -97,12 +91,6 @@
   url: https://www.pinterest.com/search/pins/?q=%23{value}
   types: [hashtag]
   payWall: Free
-- id: '92341'
-  provider: playeur
-  display: Playeur Search
-  url: https://playeur.com/search?q={value}
-  types: [alias, name, domain, hashtag]
-  payWall: Free
 - id: '92326'
   provider: reddit
   display: Reddit Mentions
@@ -119,7 +107,7 @@
   provider: shutterstock
   display: ShutterStock Search
   url: https://www.shutterstock.com/search/{value}
-  types: [alias, hashtag, name]
+  types: [hashtag, name]
   payWall: Free
 - id: '92322'
   provider: social-searcher
