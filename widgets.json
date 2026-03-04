@@ -809,30 +809,6 @@
       }
     },
     {
-      "id": "spiderfoot.email-address.investigate",
-      "name": "SpiderFoot HX — Investigation",
-      "display": "SpiderFoot HX — Investigation",
-      "provider": "SpiderFoot",
-      "category": "OSINT Automation",
-      "description": "Launch an automated OSINT investigation in SpiderFoot HX and receive a direct link to the results.",
-      "icon": "https://www.google.com/s2/favicons?domain=spiderfoot.net&sz=32",
-      "signupURL": "https://www.spiderfoot.net/",
-      "types": ["email-address", "ip-address", "domain", "alias", "phone-number"],
-      "payWall": "paid",
-      "region": "global",
-      "priority": 70,
-      "testValue": "test@example.com",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": [
-          { "key": "key",      "name": "API Key" },
-          { "key": "instance", "name": "Instance Hostname" }
-        ]
-      }
-    },
-    {
       "id": "arkham.crypto-address.intelligence",
       "name": "Arkham Intelligence — Crypto Address",
       "display": "Arkham Intelligence — Crypto Address",
