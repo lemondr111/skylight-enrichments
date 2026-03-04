@@ -2996,7 +2996,7 @@
       "description": "Prevent fraud confidently with IPQS free anti-fraud solution. IPQS fraud prevention tools detect high risk users, clicks, and payments to detect abusive behavior in real-time.",
       "region": "Global",
       "payWall": "Freemium",
-      "url": "https://www.ipqualityscore.com/free-email-validation-test/lookup/{value}",
+      "url": "https://www.ipqualityscore.com/free-email-validation-test/lookup/{value:noEncoding}",
       "category": "Validation & Tools",
       "priority": 0,
       "types": [
