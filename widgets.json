@@ -574,29 +574,6 @@
       }
     },
     {
-      "id": "clearbit.email-address.enrich",
-      "name": "Clearbit — Person Enrichment",
-      "display": "Clearbit — Person Enrichment",
-      "provider": "Clearbit",
-      "category": "Person Intelligence",
-      "description": "Enrich an email address with person bio, social handles and company data via Clearbit (now HubSpot).",
-      "icon": "https://www.google.com/s2/favicons?domain=clearbit.com&sz=32",
-      "signupURL": "https://clearbit.com/",
-      "types": ["email-address"],
-      "payWall": "paid",
-      "region": "global",
-      "priority": 75,
-      "testValue": "alex@alexmaccaw.com",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": [
-          { "key": "key", "name": "API Key" }
-        ]
-      }
-    },
-    {
       "id": "whoisxml.domain.history",
       "name": "WhoisXMLAPI — Domain History",
       "display": "WhoisXMLAPI — Domain History",
