@@ -69,18 +69,17 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "app_id", "name": "App ID" },
-          { "key": "secret",  "name": "Secret" }
+          { "key": "token", "name": "Personal Access Token" }
         ]
       }
     },
     {
       "id": "censys.domain.certs",
-      "name": "Censys — Certificate Search",
-      "display": "Censys — Certificate Search",
+      "name": "Censys — Domain Search",
+      "display": "Censys — Domain Search",
       "provider": "Censys",
       "category": "WHOIS & DNS",
-      "description": "TLS certificates issued for a domain, including subdomains.",
+      "description": "Find hosts associated with a domain via Censys.",
       "icon": "https://www.google.com/s2/favicons?domain=censys.io&sz=32",
       "signupURL": "https://accounts.censys.io/register",
       "types": ["domain"],
@@ -93,8 +92,7 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "app_id", "name": "App ID" },
-          { "key": "secret",  "name": "Secret" }
+          { "key": "token", "name": "Personal Access Token" }
         ]
       }
     },
