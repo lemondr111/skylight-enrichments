@@ -328,9 +328,9 @@
       "display": "RobTex — IP Intelligence",
       "provider": "RobTex",
       "category": "WHOIS & DNS",
-      "description": "BGP, ASN and passive/active DNS records for an IP address. No API key required.",
+      "description": "BGP, ASN and passive/active DNS records for an IP address. Free without a key (10 req/hr); add a RapidAPI key for unlimited access.",
       "icon": "https://www.google.com/s2/favicons?domain=robtex.com&sz=32",
-      "signupURL": "",
+      "signupURL": "https://rapidapi.com/robtex/api/robtex",
       "types": ["ip-address"],
       "payWall": "free",
       "region": "global",
@@ -340,7 +340,15 @@
       "fields": [],
       "autorun": false,
       "authorization": {
-        "fields": []
+        "fields": [
+          {
+            "name": "RapidAPI Key",
+            "key": "apiKey",
+            "type": "password",
+            "value": "",
+            "required": false
+          }
+        ]
       }
     },
     {
@@ -349,9 +357,9 @@
       "display": "RobTex — Domain DNS",
       "provider": "RobTex",
       "category": "WHOIS & DNS",
-      "description": "Passive DNS history for a domain. No API key required.",
+      "description": "Passive DNS history for a domain. Free without a key (10 req/hr); add a RapidAPI key for unlimited access.",
       "icon": "https://www.google.com/s2/favicons?domain=robtex.com&sz=32",
-      "signupURL": "",
+      "signupURL": "https://rapidapi.com/robtex/api/robtex",
       "types": ["domain"],
       "payWall": "free",
       "region": "global",
@@ -361,7 +369,15 @@
       "fields": [],
       "autorun": false,
       "authorization": {
-        "fields": []
+        "fields": [
+          {
+            "name": "RapidAPI Key",
+            "key": "apiKey",
+            "type": "password",
+            "value": "",
+            "required": false
+          }
+        ]
       }
     },
     {
