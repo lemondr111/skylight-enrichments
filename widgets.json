@@ -749,6 +749,422 @@
           { "key": "key", "name": "API Key" }
         ]
       }
+    },
+
+    {
+      "id": "internetdb.ip-address.search",
+      "name": "Shodan InternetDB — IP Lookup",
+      "display": "Shodan InternetDB",
+      "provider": "Shodan",
+      "category": "Network Scanning",
+      "description": "No-key fast IP lookup: open ports, hostnames, CPEs, and known CVEs from Shodan's InternetDB.",
+      "icon": "https://www.google.com/s2/favicons?domain=shodan.io&sz=32",
+      "signupURL": "",
+      "types": ["ip-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 88,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": true,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "crtsh.domain.certs",
+      "name": "crt.sh — Certificate Transparency",
+      "display": "crt.sh",
+      "provider": "crt.sh",
+      "category": "WHOIS & DNS",
+      "description": "Search SSL/TLS certificates from Certificate Transparency logs for a domain or email address.",
+      "icon": "https://www.google.com/s2/favicons?domain=crt.sh&sz=32",
+      "signupURL": "",
+      "types": ["domain", "website", "email-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 72,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "threatminer.ip-address.search",
+      "name": "ThreatMiner — IP Intelligence",
+      "display": "ThreatMiner — IP",
+      "provider": "ThreatMiner",
+      "category": "Threat Intelligence",
+      "description": "Passive DNS history and SSL certificates seen on an IP address. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=threatminer.org&sz=32",
+      "signupURL": "",
+      "types": ["ip-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 70,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "threatminer.domain.search",
+      "name": "ThreatMiner — Domain Intelligence",
+      "display": "ThreatMiner — Domain",
+      "provider": "ThreatMiner",
+      "category": "Threat Intelligence",
+      "description": "Passive DNS IPs and subdomains for a domain. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=threatminer.org&sz=32",
+      "signupURL": "",
+      "types": ["domain", "website"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 68,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "threatminer.hash.search",
+      "name": "ThreatMiner — File Hash",
+      "display": "ThreatMiner — Hash",
+      "provider": "ThreatMiner",
+      "category": "Threat Intelligence",
+      "description": "Antivirus detection results for a file hash. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=threatminer.org&sz=32",
+      "signupURL": "",
+      "types": ["hash"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 65,
+      "testValue": "d41d8cd98f00b204e9800998ecf8427e",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "wayback.domain.archive",
+      "name": "Wayback Machine — Archive Summary",
+      "display": "Wayback Machine",
+      "provider": "Internet Archive",
+      "category": "WHOIS & DNS",
+      "description": "First and last archived snapshot dates with approximate total capture count for a URL or domain.",
+      "icon": "https://www.google.com/s2/favicons?domain=web.archive.org&sz=32",
+      "signupURL": "",
+      "types": ["domain", "website", "url"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 60,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "otx.ip-address.search",
+      "name": "AlienVault OTX — IP",
+      "display": "OTX — IP",
+      "provider": "AlienVault OTX",
+      "category": "Threat Intelligence",
+      "description": "OTX pulse count, reputation, malware families and associated threat tags for an IP address. API key optional.",
+      "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
+      "signupURL": "https://otx.alienvault.com/accounts/register",
+      "types": ["ip-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 82,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "otx.domain.search",
+      "name": "AlienVault OTX — Domain",
+      "display": "OTX — Domain",
+      "provider": "AlienVault OTX",
+      "category": "Threat Intelligence",
+      "description": "OTX pulse count, malware families and threat tags for a domain. API key optional.",
+      "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
+      "signupURL": "https://otx.alienvault.com/accounts/register",
+      "types": ["domain", "website"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 78,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "otx.hash.search",
+      "name": "AlienVault OTX — File Hash",
+      "display": "OTX — Hash",
+      "provider": "AlienVault OTX",
+      "category": "Threat Intelligence",
+      "description": "OTX pulse count and malware families for a file hash. API key optional.",
+      "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
+      "signupURL": "https://otx.alienvault.com/accounts/register",
+      "types": ["hash"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 76,
+      "testValue": "d41d8cd98f00b204e9800998ecf8427e",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "otx.url.search",
+      "name": "AlienVault OTX — URL",
+      "display": "OTX — URL",
+      "provider": "AlienVault OTX",
+      "category": "Threat Intelligence",
+      "description": "OTX threat intelligence for a URL. API key optional.",
+      "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
+      "signupURL": "https://otx.alienvault.com/accounts/register",
+      "types": ["url"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 74,
+      "testValue": "https://google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "abuseipdb.ip-address.check",
+      "name": "AbuseIPDB — IP Abuse Check",
+      "display": "AbuseIPDB",
+      "provider": "AbuseIPDB",
+      "category": "Threat Intelligence",
+      "description": "Abuse confidence score, report count, ISP, usage type and Tor node detection for an IP. Free: 1,000 checks/day.",
+      "icon": "https://www.google.com/s2/favicons?domain=abuseipdb.com&sz=32",
+      "signupURL": "https://www.abuseipdb.com/register",
+      "types": ["ip-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 84,
+      "testValue": "8.8.8.8",
+      "requestRate": "1,000/day",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key" }
+        ]
+      }
+    },
+
+    {
+      "id": "phishtank.url.check",
+      "name": "PhishTank — Phishing URL Check",
+      "display": "PhishTank",
+      "provider": "PhishTank",
+      "category": "Threat Intelligence",
+      "description": "Check if a URL is a verified phishing site in the PhishTank community database. API key optional.",
+      "icon": "https://www.google.com/s2/favicons?domain=phishtank.org&sz=32",
+      "signupURL": "https://www.phishtank.com/register.php",
+      "types": ["url"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 78,
+      "testValue": "https://google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "App Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "urlscan.domain.search",
+      "name": "URLScan.io — Domain Scans",
+      "display": "URLScan.io — Domain",
+      "provider": "URLScan.io",
+      "category": "Threat Intelligence",
+      "description": "Search existing URLScan results for a domain: IPs contacted, server headers, country, and malicious verdicts.",
+      "icon": "https://www.google.com/s2/favicons?domain=urlscan.io&sz=32",
+      "signupURL": "https://urlscan.io/user/signup",
+      "types": ["domain", "website"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 76,
+      "testValue": "google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "urlscan.ip-address.search",
+      "name": "URLScan.io — IP Scans",
+      "display": "URLScan.io — IP",
+      "provider": "URLScan.io",
+      "category": "Threat Intelligence",
+      "description": "Search URLScan scan history for an IP address.",
+      "icon": "https://www.google.com/s2/favicons?domain=urlscan.io&sz=32",
+      "signupURL": "https://urlscan.io/user/signup",
+      "types": ["ip-address"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 72,
+      "testValue": "8.8.8.8",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "urlscan.url.search",
+      "name": "URLScan.io — URL Scans",
+      "display": "URLScan.io — URL",
+      "provider": "URLScan.io",
+      "category": "Threat Intelligence",
+      "description": "Search URLScan scan history for a specific URL.",
+      "icon": "https://www.google.com/s2/favicons?domain=urlscan.io&sz=32",
+      "signupURL": "https://urlscan.io/user/signup",
+      "types": ["url"],
+      "payWall": "freemium",
+      "region": "global",
+      "priority": 70,
+      "testValue": "https://google.com",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": {
+        "fields": [
+          { "key": "key", "name": "API Key (optional)", "required": false }
+        ]
+      }
+    },
+
+    {
+      "id": "blockchain.crypto-address.lookup",
+      "name": "Blockchain.com — Bitcoin Address",
+      "display": "Blockchain.com",
+      "provider": "Blockchain.com",
+      "category": "Crypto Intelligence",
+      "description": "Balance, total received/sent and recent transactions for a Bitcoin address. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=blockchain.com&sz=32",
+      "signupURL": "",
+      "types": ["crypto-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 75,
+      "testValue": "1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf Na",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "cryptoscamdb.domain.check",
+      "name": "CryptoScamDB — Domain Check",
+      "display": "CryptoScamDB — Domain",
+      "provider": "CryptoScamDB",
+      "category": "Crypto Intelligence",
+      "description": "Check a domain against the CryptoScamDB community scam database. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=cryptoscamdb.org&sz=32",
+      "signupURL": "",
+      "types": ["domain", "website"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 68,
+      "testValue": "metamask.io",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "cryptoscamdb.crypto-address.check",
+      "name": "CryptoScamDB — Address Check",
+      "display": "CryptoScamDB — Address",
+      "provider": "CryptoScamDB",
+      "category": "Crypto Intelligence",
+      "description": "Check a crypto wallet address against the CryptoScamDB community scam database. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=cryptoscamdb.org&sz=32",
+      "signupURL": "",
+      "types": ["crypto-address"],
+      "payWall": "free",
+      "region": "global",
+      "priority": 66,
+      "testValue": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
+    },
+
+    {
+      "id": "edgar.name.search",
+      "name": "SEC EDGAR — Company Filings",
+      "display": "SEC EDGAR",
+      "provider": "SEC",
+      "category": "Company Intelligence",
+      "description": "US company registration details (SIC, state, tickers) and last 10 SEC filings. No API key required.",
+      "icon": "https://www.google.com/s2/favicons?domain=sec.gov&sz=32",
+      "signupURL": "",
+      "types": ["name", "domain"],
+      "payWall": "free",
+      "region": "us",
+      "priority": 55,
+      "testValue": "Apple Inc",
+      "requestRate": "",
+      "fields": [],
+      "autorun": false,
+      "authorization": { "fields": [] }
     }
   ]
 }
