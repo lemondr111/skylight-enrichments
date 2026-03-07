@@ -1315,53 +1315,6 @@
       }
     },
     {
-      "id": "cryptoscamdb.domain.check",
-      "name": "CryptoScamDB \u2014 Domain Check",
-      "display": "CryptoScamDB \u2014 Domain",
-      "provider": "CryptoScamDB",
-      "category": "Crypto Intelligence",
-      "description": "Check a domain against the CryptoScamDB community scam database. No API key required.",
-      "icon": "https://www.google.com/s2/favicons?domain=cryptoscamdb.org&sz=32",
-      "signupURL": "",
-      "types": [
-        "domain",
-        "website"
-      ],
-      "payWall": "free",
-      "region": "global",
-      "priority": 68,
-      "testValue": "metamask.io",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": []
-      }
-    },
-    {
-      "id": "cryptoscamdb.crypto-address.check",
-      "name": "CryptoScamDB \u2014 Address Check",
-      "display": "CryptoScamDB \u2014 Address",
-      "provider": "CryptoScamDB",
-      "category": "Crypto Intelligence",
-      "description": "Check a crypto wallet address against the CryptoScamDB community scam database. No API key required.",
-      "icon": "https://www.google.com/s2/favicons?domain=cryptoscamdb.org&sz=32",
-      "signupURL": "",
-      "types": [
-        "crypto-address"
-      ],
-      "payWall": "free",
-      "region": "global",
-      "priority": 66,
-      "testValue": "0x5a52e96bacdabb82fd05763e25335261b270efcb",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": []
-      }
-    },
-    {
       "id": "edgar.name.search",
       "name": "SEC EDGAR \u2014 Company Filings",
       "display": "SEC EDGAR",
