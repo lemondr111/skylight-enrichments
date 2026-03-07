@@ -6,14 +6,16 @@
   "widgets": [
     {
       "id": "shodan.ip-address.search",
-      "name": "Shodan — IP Lookup",
-      "display": "Shodan — IP Lookup",
+      "name": "Shodan \u2014 IP Lookup",
+      "display": "Shodan \u2014 IP Lookup",
       "provider": "Shodan",
       "category": "Network Scanning",
       "description": "Open ports, services, banners and known vulnerabilities for an IP address.",
       "icon": "https://www.google.com/s2/favicons?domain=shodan.io&sz=32",
       "signupURL": "https://account.shodan.io/register",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 90,
@@ -23,20 +25,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "shodan.domain.search",
-      "name": "Shodan — Domain Search",
-      "display": "Shodan — Domain Search",
+      "name": "Shodan \u2014 Domain Search",
+      "display": "Shodan \u2014 Domain Search",
       "provider": "Shodan",
       "category": "Network Scanning",
       "description": "Shodan results for all IPs associated with a domain.",
       "icon": "https://www.google.com/s2/favicons?domain=shodan.io&sz=32",
       "signupURL": "https://account.shodan.io/register",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 80,
@@ -46,20 +53,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "censys.ip-address.search",
-      "name": "Censys — IP Lookup",
-      "display": "Censys — IP Lookup",
+      "name": "Censys \u2014 IP Lookup",
+      "display": "Censys \u2014 IP Lookup",
       "provider": "Censys",
       "category": "Network Scanning",
       "description": "Services and certificates discovered on an IP via Censys.",
       "icon": "https://www.google.com/s2/favicons?domain=censys.io&sz=32",
       "signupURL": "https://accounts.censys.io/register",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 85,
@@ -69,20 +81,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "token", "name": "Personal Access Token" }
+          {
+            "key": "token",
+            "name": "Personal Access Token"
+          }
         ]
       }
     },
     {
       "id": "censys.domain.certs",
-      "name": "Censys — Domain Search",
-      "display": "Censys — Domain Search",
+      "name": "Censys \u2014 Domain Search",
+      "display": "Censys \u2014 Domain Search",
       "provider": "Censys",
       "category": "WHOIS & DNS",
       "description": "Find hosts associated with a domain via Censys.",
       "icon": "https://www.google.com/s2/favicons?domain=censys.io&sz=32",
       "signupURL": "https://accounts.censys.io/register",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 75,
@@ -92,20 +109,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "token", "name": "Personal Access Token" }
+          {
+            "key": "token",
+            "name": "Personal Access Token"
+          }
         ]
       }
     },
     {
       "id": "virustotal.ip-address.report",
-      "name": "VirusTotal — IP Report",
-      "display": "VirusTotal — IP Report",
+      "name": "VirusTotal \u2014 IP Report",
+      "display": "VirusTotal \u2014 IP Report",
       "provider": "VirusTotal",
       "category": "Threat Intelligence",
       "description": "Reputation and detection results for an IP address.",
       "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
       "signupURL": "https://www.virustotal.com/gui/join-us",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 90,
@@ -115,20 +137,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "virustotal.domain.report",
-      "name": "VirusTotal — Domain Report",
-      "display": "VirusTotal — Domain Report",
+      "name": "VirusTotal \u2014 Domain Report",
+      "display": "VirusTotal \u2014 Domain Report",
       "provider": "VirusTotal",
       "category": "Threat Intelligence",
       "description": "Reputation and detection results for a domain.",
       "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
       "signupURL": "https://www.virustotal.com/gui/join-us",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 85,
@@ -138,20 +165,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "virustotal.hash.report",
-      "name": "VirusTotal — File Hash Report",
-      "display": "VirusTotal — File Hash Report",
+      "name": "VirusTotal \u2014 File Hash Report",
+      "display": "VirusTotal \u2014 File Hash Report",
       "provider": "VirusTotal",
       "category": "Threat Intelligence",
       "description": "Scan results for a file hash (MD5, SHA1, or SHA256).",
       "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
       "signupURL": "https://www.virustotal.com/gui/join-us",
-      "types": ["hash"],
+      "types": [
+        "hash"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 80,
@@ -161,20 +193,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "virustotal.url.report",
-      "name": "VirusTotal — URL Report",
-      "display": "VirusTotal — URL Report",
+      "name": "VirusTotal \u2014 URL Report",
+      "display": "VirusTotal \u2014 URL Report",
       "provider": "VirusTotal",
       "category": "Threat Intelligence",
       "description": "Scan results for a URL.",
       "icon": "https://www.google.com/s2/favicons?domain=virustotal.com&sz=32",
       "signupURL": "https://www.virustotal.com/gui/join-us",
-      "types": ["url"],
+      "types": [
+        "url"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 75,
@@ -184,20 +221,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "hibp.email-address.breaches",
-      "name": "HaveIBeenPwned — Breach Check",
-      "display": "HaveIBeenPwned — Breach Check",
+      "name": "HaveIBeenPwned \u2014 Breach Check",
+      "display": "HaveIBeenPwned \u2014 Breach Check",
       "provider": "HaveIBeenPwned",
       "category": "Threat Intelligence",
       "description": "Check whether an email address appears in known data breaches.",
       "icon": "https://www.google.com/s2/favicons?domain=haveibeenpwned.com&sz=32",
       "signupURL": "https://haveibeenpwned.com/API/Key",
-      "types": ["email-address"],
+      "types": [
+        "email-address"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 85,
@@ -207,20 +249,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "hunter.email-address.verify",
-      "name": "Hunter.io — Email Verify",
-      "display": "Hunter.io — Email Verify",
+      "name": "Hunter.io \u2014 Email Verify",
+      "display": "Hunter.io \u2014 Email Verify",
       "provider": "Hunter.io",
       "category": "Email Intelligence",
       "description": "Verify whether an email address is deliverable and check its source.",
       "icon": "https://www.google.com/s2/favicons?domain=hunter.io&sz=32",
       "signupURL": "https://hunter.io/users/sign_up",
-      "types": ["email-address"],
+      "types": [
+        "email-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 80,
@@ -230,20 +277,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "hunter.domain.search",
-      "name": "Hunter.io — Domain Email Search",
-      "display": "Hunter.io — Domain Email Search",
+      "name": "Hunter.io \u2014 Domain Email Search",
+      "display": "Hunter.io \u2014 Domain Email Search",
       "provider": "Hunter.io",
       "category": "Email Intelligence",
       "description": "Find email addresses associated with a domain.",
       "icon": "https://www.google.com/s2/favicons?domain=hunter.io&sz=32",
       "signupURL": "https://hunter.io/users/sign_up",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 75,
@@ -253,20 +305,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "whois.domain.lookup",
-      "name": "WHOIS — Domain Lookup",
-      "display": "WHOIS — Domain Lookup",
+      "name": "WHOIS \u2014 Domain Lookup",
+      "display": "WHOIS \u2014 Domain Lookup",
       "provider": "WHOIS",
       "category": "WHOIS & DNS",
       "description": "Domain registration details: registrar, dates, nameservers, contacts.",
       "icon": "https://www.google.com/s2/favicons?domain=whois.domaintools.com&sz=32",
       "signupURL": "",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 70,
@@ -280,14 +337,16 @@
     },
     {
       "id": "whois.ip-address.lookup",
-      "name": "WHOIS — IP Lookup",
-      "display": "WHOIS — IP Lookup",
+      "name": "WHOIS \u2014 IP Lookup",
+      "display": "WHOIS \u2014 IP Lookup",
       "provider": "WHOIS",
       "category": "WHOIS & DNS",
       "description": "IP registration and ASN details via WHOIS.",
       "icon": "https://www.google.com/s2/favicons?domain=whois.domaintools.com&sz=32",
       "signupURL": "",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 65,
@@ -301,14 +360,16 @@
     },
     {
       "id": "emailrep.email-address.reputation",
-      "name": "EmailRep — Email Reputation",
-      "display": "EmailRep — Email Reputation",
+      "name": "EmailRep \u2014 Email Reputation",
+      "display": "EmailRep \u2014 Email Reputation",
       "provider": "EmailRep",
       "category": "Email Intelligence",
       "description": "Risk scoring and profile lookup for an email address. Detects disposable, spam, and breached accounts.",
       "icon": "https://www.google.com/s2/favicons?domain=emailrep.io&sz=32",
       "signupURL": "https://emailrep.io/key",
-      "types": ["email-address"],
+      "types": [
+        "email-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 80,
@@ -318,20 +379,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key (optional)" }
+          {
+            "key": "key",
+            "name": "API Key (optional)"
+          }
         ]
       }
     },
     {
       "id": "robtex.ip-address.query",
-      "name": "RobTex — IP Intelligence",
-      "display": "RobTex — IP Intelligence",
+      "name": "RobTex \u2014 IP Intelligence",
+      "display": "RobTex \u2014 IP Intelligence",
       "provider": "RobTex",
       "category": "WHOIS & DNS",
       "description": "BGP, ASN and passive/active DNS records for an IP address. Free without a key (10 req/hr); add a RapidAPI key for unlimited access.",
       "icon": "https://www.google.com/s2/favicons?domain=robtex.com&sz=32",
       "signupURL": "https://rapidapi.com/robtex/api/robtex",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 60,
@@ -353,14 +419,16 @@
     },
     {
       "id": "robtex.domain.dns",
-      "name": "RobTex — Domain DNS",
-      "display": "RobTex — Domain DNS",
+      "name": "RobTex \u2014 Domain DNS",
+      "display": "RobTex \u2014 Domain DNS",
       "provider": "RobTex",
       "category": "WHOIS & DNS",
       "description": "Passive DNS history for a domain. Free without a key (10 req/hr); add a RapidAPI key for unlimited access.",
       "icon": "https://www.google.com/s2/favicons?domain=robtex.com&sz=32",
       "signupURL": "https://rapidapi.com/robtex/api/robtex",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 55,
@@ -382,14 +450,16 @@
     },
     {
       "id": "ipinfo.ip-address.lookup",
-      "name": "IPinfo — IP Geolocation",
-      "display": "IPinfo — IP Geolocation",
+      "name": "IPinfo \u2014 IP Geolocation",
+      "display": "IPinfo \u2014 IP Geolocation",
       "provider": "IPinfo",
       "category": "Geolocation",
       "description": "City, region, country, coordinates, ASN and abuse contact for an IP address.",
       "icon": "https://www.google.com/s2/favicons?domain=ipinfo.io&sz=32",
       "signupURL": "https://ipinfo.io/signup",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 75,
@@ -399,20 +469,29 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "token", "name": "API Token (optional)" }
+          {
+            "key": "token",
+            "name": "API Token (optional)"
+          }
         ]
       }
     },
     {
       "id": "dehashed.email-address.search",
-      "name": "DeHashed — Breach Search",
-      "display": "DeHashed — Breach Search",
+      "name": "DeHashed \u2014 Breach Search",
+      "display": "DeHashed \u2014 Breach Search",
       "provider": "DeHashed",
       "category": "Threat Intelligence",
       "description": "Search breach databases for an email, domain, IP, username or name. Returns passwords, hashes and source databases.",
       "icon": "https://www.google.com/s2/favicons?domain=dehashed.com&sz=32",
       "signupURL": "https://dehashed.com/",
-      "types": ["email-address", "domain", "ip-address", "alias", "name"],
+      "types": [
+        "email-address",
+        "domain",
+        "ip-address",
+        "alias",
+        "name"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 70,
@@ -422,20 +501,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "epieos.email-address.search",
-      "name": "Epieos — Email OSINT",
-      "display": "Epieos — Email OSINT",
+      "name": "Epieos \u2014 Email OSINT",
+      "display": "Epieos \u2014 Email OSINT",
       "provider": "Epieos",
       "category": "Email Intelligence",
       "description": "Enumerate services registered to an email address including Google, Apple, social networks, and more.",
       "icon": "https://www.google.com/s2/favicons?domain=epieos.com&sz=32",
       "signupURL": "https://epieos.com/",
-      "types": ["email-address"],
+      "types": [
+        "email-address"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 85,
@@ -445,20 +529,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "epieos.phone-number.search",
-      "name": "Epieos — Phone OSINT",
-      "display": "Epieos — Phone OSINT",
+      "name": "Epieos \u2014 Phone OSINT",
+      "display": "Epieos \u2014 Phone OSINT",
       "provider": "Epieos",
       "category": "Phone Intelligence",
       "description": "Enumerate services and accounts registered to a phone number.",
       "icon": "https://www.google.com/s2/favicons?domain=epieos.com&sz=32",
       "signupURL": "https://epieos.com/",
-      "types": ["phone-number"],
+      "types": [
+        "phone-number"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 80,
@@ -468,20 +557,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "osintind.email-address.search",
-      "name": "OSINT Industries — Email",
-      "display": "OSINT Industries — Email",
+      "name": "OSINT Industries \u2014 Email",
+      "display": "OSINT Industries \u2014 Email",
       "provider": "OSINT Industries",
       "category": "Email Intelligence",
       "description": "Service enumeration for an email address across 200+ platforms. Takes 30-90 seconds to complete.",
       "icon": "https://www.google.com/s2/favicons?domain=osint.industries&sz=32",
       "signupURL": "https://osint.industries/price",
-      "types": ["email-address"],
+      "types": [
+        "email-address"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 90,
@@ -491,20 +585,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "osintind.phone-number.search",
-      "name": "OSINT Industries — Phone",
-      "display": "OSINT Industries — Phone",
+      "name": "OSINT Industries \u2014 Phone",
+      "display": "OSINT Industries \u2014 Phone",
       "provider": "OSINT Industries",
       "category": "Phone Intelligence",
       "description": "Service enumeration for a phone number across 200+ platforms. Takes 30-90 seconds to complete.",
       "icon": "https://www.google.com/s2/favicons?domain=osint.industries&sz=32",
       "signupURL": "https://osint.industries/price",
-      "types": ["phone-number"],
+      "types": [
+        "phone-number"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 85,
@@ -514,20 +613,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "fullcontact.email-address.enrich",
-      "name": "FullContact — Person Enrichment",
-      "display": "FullContact — Person Enrichment",
+      "name": "FullContact \u2014 Person Enrichment",
+      "display": "FullContact \u2014 Person Enrichment",
       "provider": "FullContact",
       "category": "Person Intelligence",
       "description": "Enrich an email address with name, employer, social profiles, education and contact details.",
       "icon": "https://www.google.com/s2/favicons?domain=fullcontact.com&sz=32",
       "signupURL": "https://platform.fullcontact.com/register",
-      "types": ["email-address"],
+      "types": [
+        "email-address"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 80,
@@ -537,20 +641,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "token", "name": "API Token" }
+          {
+            "key": "token",
+            "name": "API Token"
+          }
         ]
       }
     },
     {
       "id": "pdl.email-address.enrich",
-      "name": "People Data Labs — Person",
-      "display": "People Data Labs — Person",
+      "name": "People Data Labs \u2014 Person",
+      "display": "People Data Labs \u2014 Person",
       "provider": "People Data Labs",
       "category": "Person Intelligence",
       "description": "Enrich an email or phone with work history, education, social profiles and contact details.",
       "icon": "https://www.google.com/s2/favicons?domain=peopledatalabs.com&sz=32",
       "signupURL": "https://www.peopledatalabs.com/signup",
-      "types": ["email-address", "phone-number"],
+      "types": [
+        "email-address",
+        "phone-number"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 80,
@@ -560,20 +670,28 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "pipl.email-address.search",
-      "name": "Pipl — Person Search",
-      "display": "Pipl — Person Search",
+      "name": "Pipl \u2014 Person Search",
+      "display": "Pipl \u2014 Person Search",
       "provider": "Pipl",
       "category": "Person Intelligence",
       "description": "Deep person search by email, phone, username or name. Returns identities, addresses, jobs and social profiles.",
       "icon": "https://www.google.com/s2/favicons?domain=pipl.com&sz=32",
       "signupURL": "https://pipl.com/api/",
-      "types": ["email-address", "phone-number", "alias", "name"],
+      "types": [
+        "email-address",
+        "phone-number",
+        "alias",
+        "name"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 85,
@@ -583,20 +701,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "whoisxml.domain.history",
-      "name": "WhoisXMLAPI — Domain History",
-      "display": "WhoisXMLAPI — Domain History",
+      "name": "WhoisXMLAPI \u2014 Domain History",
+      "display": "WhoisXMLAPI \u2014 Domain History",
       "provider": "WhoisXMLAPI",
       "category": "WHOIS & DNS",
       "description": "Full WHOIS registration history for a domain including contacts and registrar changes.",
       "icon": "https://www.google.com/s2/favicons?domain=whoisxmlapi.com&sz=32",
       "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
-      "types": ["domain"],
+      "types": [
+        "domain"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 75,
@@ -606,20 +729,27 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "whoisxml.email-address.reverse",
-      "name": "WhoisXMLAPI — Reverse WHOIS",
-      "display": "WhoisXMLAPI — Reverse WHOIS",
+      "name": "WhoisXMLAPI \u2014 Reverse WHOIS",
+      "display": "WhoisXMLAPI \u2014 Reverse WHOIS",
       "provider": "WhoisXMLAPI",
       "category": "WHOIS & DNS",
       "description": "Find domains registered with an email address, name or phone number.",
       "icon": "https://www.google.com/s2/favicons?domain=whoisxmlapi.com&sz=32",
       "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
-      "types": ["email-address", "name", "phone-number"],
+      "types": [
+        "email-address",
+        "name",
+        "phone-number"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 70,
@@ -629,20 +759,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "whoisxml.ip-address.reverse",
-      "name": "WhoisXMLAPI — Reverse IP",
-      "display": "WhoisXMLAPI — Reverse IP",
+      "name": "WhoisXMLAPI \u2014 Reverse IP",
+      "display": "WhoisXMLAPI \u2014 Reverse IP",
       "provider": "WhoisXMLAPI",
       "category": "WHOIS & DNS",
       "description": "Find domains hosted on an IP address.",
       "icon": "https://www.google.com/s2/favicons?domain=whoisxmlapi.com&sz=32",
       "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 65,
@@ -652,20 +787,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "leakcheck.email-address.search",
-      "name": "LeakCheck — Breach Lookup",
-      "display": "LeakCheck — Breach Lookup",
+      "name": "LeakCheck \u2014 Breach Lookup",
+      "display": "LeakCheck \u2014 Breach Lookup",
       "provider": "LeakCheck",
       "category": "Threat Intelligence",
       "description": "Look up an email address or username in breach databases. Returns credentials and source databases.",
       "icon": "https://www.google.com/s2/favicons?domain=leakcheck.io&sz=32",
       "signupURL": "https://leakcheck.io/",
-      "types": ["email-address", "alias"],
+      "types": [
+        "email-address",
+        "alias"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 80,
@@ -675,20 +816,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
     {
       "id": "hlr.phone-number.lookup",
-      "name": "HLR Lookup — Phone Validation",
-      "display": "HLR Lookup — Phone Validation",
+      "name": "HLR Lookup \u2014 Phone Validation",
+      "display": "HLR Lookup \u2014 Phone Validation",
       "provider": "HLR Lookup",
       "category": "Phone Intelligence",
       "description": "Validate a mobile phone number and look up its carrier, MCC, MNC, roaming status and number portability.",
       "icon": "https://www.google.com/s2/favicons?domain=hlrlookup.com&sz=32",
       "signupURL": "https://portal.hlrlookup.com/Register-An-Account",
-      "types": ["phone-number"],
+      "types": [
+        "phone-number"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 80,
@@ -698,21 +844,29 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key",      "name": "API Key" },
-          { "key": "password", "name": "API Secret" }
+          {
+            "key": "key",
+            "name": "API Key"
+          },
+          {
+            "key": "password",
+            "name": "API Secret"
+          }
         ]
       }
     },
     {
       "id": "twilio.phone-number.lookup",
-      "name": "Twilio — Phone Line Intelligence",
-      "display": "Twilio — Phone Line Intelligence",
+      "name": "Twilio \u2014 Phone Line Intelligence",
+      "display": "Twilio \u2014 Phone Line Intelligence",
       "provider": "Twilio",
       "category": "Phone Intelligence",
       "description": "Determine line type (mobile, landline, VoIP, toll-free, etc.) and carrier for a phone number.",
       "icon": "https://www.google.com/s2/favicons?domain=twilio.com&sz=32",
       "signupURL": "https://www.twilio.com/try-twilio",
-      "types": ["phone-number"],
+      "types": [
+        "phone-number"
+      ],
       "payWall": "paid",
       "region": "global",
       "priority": 85,
@@ -722,21 +876,29 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "sid",      "name": "Account SID" },
-          { "key": "password", "name": "Auth Token" }
+          {
+            "key": "sid",
+            "name": "Account SID"
+          },
+          {
+            "key": "password",
+            "name": "Auth Token"
+          }
         ]
       }
     },
     {
       "id": "arkham.crypto-address.intelligence",
-      "name": "Arkham Intelligence — Crypto Address",
-      "display": "Arkham Intelligence — Crypto Address",
+      "name": "Arkham Intelligence \u2014 Crypto Address",
+      "display": "Arkham Intelligence \u2014 Crypto Address",
       "provider": "Arkham Intelligence",
       "category": "Crypto Intelligence",
       "description": "Entity identification, token holdings and transaction summary for a crypto address.",
       "icon": "https://www.google.com/s2/favicons?domain=arkhamintelligence.com&sz=32",
       "signupURL": "https://platform.arkhamintelligence.com",
-      "types": ["crypto-address"],
+      "types": [
+        "crypto-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 80,
@@ -746,21 +908,25 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
-
     {
       "id": "internetdb.ip-address.search",
-      "name": "Shodan InternetDB — IP Lookup",
+      "name": "Shodan InternetDB \u2014 IP Lookup",
       "display": "Shodan InternetDB",
       "provider": "Shodan",
       "category": "Network Scanning",
       "description": "No-key fast IP lookup: open ports, hostnames, CPEs, and known CVEs from Shodan's InternetDB.",
       "icon": "https://www.google.com/s2/favicons?domain=shodan.io&sz=32",
       "signupURL": "",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 88,
@@ -768,19 +934,24 @@
       "requestRate": "",
       "fields": [],
       "autorun": true,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "crtsh.domain.certs",
-      "name": "crt.sh — Certificate Transparency",
+      "name": "crt.sh \u2014 Certificate Transparency",
       "display": "crt.sh",
       "provider": "crt.sh",
       "category": "WHOIS & DNS",
       "description": "Search SSL/TLS certificates from Certificate Transparency logs for a domain or email address.",
       "icon": "https://www.google.com/s2/favicons?domain=crt.sh&sz=32",
       "signupURL": "",
-      "types": ["domain", "website", "email-address"],
+      "types": [
+        "domain",
+        "website",
+        "email-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 72,
@@ -788,19 +959,22 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "threatminer.ip-address.search",
-      "name": "ThreatMiner — IP Intelligence",
-      "display": "ThreatMiner — IP",
+      "name": "ThreatMiner \u2014 IP Intelligence",
+      "display": "ThreatMiner \u2014 IP",
       "provider": "ThreatMiner",
       "category": "Threat Intelligence",
       "description": "Passive DNS history and SSL certificates seen on an IP address. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=threatminer.org&sz=32",
       "signupURL": "",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 70,
@@ -808,19 +982,23 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "threatminer.domain.search",
-      "name": "ThreatMiner — Domain Intelligence",
-      "display": "ThreatMiner — Domain",
+      "name": "ThreatMiner \u2014 Domain Intelligence",
+      "display": "ThreatMiner \u2014 Domain",
       "provider": "ThreatMiner",
       "category": "Threat Intelligence",
       "description": "Passive DNS IPs and subdomains for a domain. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=threatminer.org&sz=32",
       "signupURL": "",
-      "types": ["domain", "website"],
+      "types": [
+        "domain",
+        "website"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 68,
@@ -828,19 +1006,22 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "threatminer.hash.search",
-      "name": "ThreatMiner — File Hash",
-      "display": "ThreatMiner — Hash",
+      "name": "ThreatMiner \u2014 File Hash",
+      "display": "ThreatMiner \u2014 Hash",
       "provider": "ThreatMiner",
       "category": "Threat Intelligence",
       "description": "Antivirus detection results for a file hash. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=threatminer.org&sz=32",
       "signupURL": "",
-      "types": ["hash"],
+      "types": [
+        "hash"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 65,
@@ -848,19 +1029,24 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "wayback.domain.archive",
-      "name": "Wayback Machine — Archive Summary",
+      "name": "Wayback Machine \u2014 Archive Summary",
       "display": "Wayback Machine",
       "provider": "Internet Archive",
       "category": "WHOIS & DNS",
       "description": "First and last archived snapshot dates with approximate total capture count for a URL or domain.",
       "icon": "https://www.google.com/s2/favicons?domain=web.archive.org&sz=32",
       "signupURL": "",
-      "types": ["domain", "website", "url"],
+      "types": [
+        "domain",
+        "website",
+        "url"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 60,
@@ -868,19 +1054,22 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "otx.ip-address.search",
-      "name": "AlienVault OTX — IP",
-      "display": "OTX — IP",
+      "name": "AlienVault OTX \u2014 IP",
+      "display": "OTX \u2014 IP",
       "provider": "AlienVault OTX",
       "category": "Threat Intelligence",
       "description": "OTX pulse count, reputation, malware families and associated threat tags for an IP address. API key optional.",
       "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
       "signupURL": "https://otx.alienvault.com/accounts/register",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 82,
@@ -890,21 +1079,27 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "OTX API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "otx.domain.search",
-      "name": "AlienVault OTX — Domain",
-      "display": "OTX — Domain",
+      "name": "AlienVault OTX \u2014 Domain",
+      "display": "OTX \u2014 Domain",
       "provider": "AlienVault OTX",
       "category": "Threat Intelligence",
       "description": "OTX pulse count, malware families and threat tags for a domain. API key optional.",
       "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
       "signupURL": "https://otx.alienvault.com/accounts/register",
-      "types": ["domain", "website"],
+      "types": [
+        "domain",
+        "website"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 78,
@@ -914,21 +1109,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "OTX API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "otx.hash.search",
-      "name": "AlienVault OTX — File Hash",
-      "display": "OTX — Hash",
+      "name": "AlienVault OTX \u2014 File Hash",
+      "display": "OTX \u2014 Hash",
       "provider": "AlienVault OTX",
       "category": "Threat Intelligence",
       "description": "OTX pulse count and malware families for a file hash. API key optional.",
       "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
       "signupURL": "https://otx.alienvault.com/accounts/register",
-      "types": ["hash"],
+      "types": [
+        "hash"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 76,
@@ -938,21 +1138,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "OTX API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "otx.url.search",
-      "name": "AlienVault OTX — URL",
-      "display": "OTX — URL",
+      "name": "AlienVault OTX \u2014 URL",
+      "display": "OTX \u2014 URL",
       "provider": "AlienVault OTX",
       "category": "Threat Intelligence",
       "description": "OTX threat intelligence for a URL. API key optional.",
       "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
       "signupURL": "https://otx.alienvault.com/accounts/register",
-      "types": ["url"],
+      "types": [
+        "url"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 74,
@@ -962,21 +1167,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "OTX API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "OTX API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "abuseipdb.ip-address.check",
-      "name": "AbuseIPDB — IP Abuse Check",
+      "name": "AbuseIPDB \u2014 IP Abuse Check",
       "display": "AbuseIPDB",
       "provider": "AbuseIPDB",
       "category": "Threat Intelligence",
       "description": "Abuse confidence score, report count, ISP, usage type and Tor node detection for an IP. Free: 1,000 checks/day.",
       "icon": "https://www.google.com/s2/favicons?domain=abuseipdb.com&sz=32",
       "signupURL": "https://www.abuseipdb.com/register",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 84,
@@ -986,45 +1196,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key" }
+          {
+            "key": "key",
+            "name": "API Key"
+          }
         ]
       }
     },
-
-    {
-      "id": "phishtank.url.check",
-      "name": "PhishTank — Phishing URL Check",
-      "display": "PhishTank",
-      "provider": "PhishTank",
-      "category": "Threat Intelligence",
-      "description": "Check if a URL is a verified phishing site in the PhishTank community database. API key optional.",
-      "icon": "https://www.google.com/s2/favicons?domain=phishtank.org&sz=32",
-      "signupURL": "https://www.phishtank.com/register.php",
-      "types": ["url"],
-      "payWall": "free",
-      "region": "global",
-      "priority": 78,
-      "testValue": "https://google.com",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": [
-          { "key": "key", "name": "App Key (optional)", "required": false }
-        ]
-      }
-    },
-
     {
       "id": "urlscan.domain.search",
-      "name": "URLScan.io — Domain Scans",
-      "display": "URLScan.io — Domain",
+      "name": "URLScan.io \u2014 Domain Scans",
+      "display": "URLScan.io \u2014 Domain",
       "provider": "URLScan.io",
       "category": "Threat Intelligence",
       "description": "Search existing URLScan results for a domain: IPs contacted, server headers, country, and malicious verdicts.",
       "icon": "https://www.google.com/s2/favicons?domain=urlscan.io&sz=32",
       "signupURL": "https://urlscan.io/user/signup",
-      "types": ["domain", "website"],
+      "types": [
+        "domain",
+        "website"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 76,
@@ -1034,21 +1225,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "urlscan.ip-address.search",
-      "name": "URLScan.io — IP Scans",
-      "display": "URLScan.io — IP",
+      "name": "URLScan.io \u2014 IP Scans",
+      "display": "URLScan.io \u2014 IP",
       "provider": "URLScan.io",
       "category": "Threat Intelligence",
       "description": "Search URLScan scan history for an IP address.",
       "icon": "https://www.google.com/s2/favicons?domain=urlscan.io&sz=32",
       "signupURL": "https://urlscan.io/user/signup",
-      "types": ["ip-address"],
+      "types": [
+        "ip-address"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 72,
@@ -1058,21 +1254,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "urlscan.url.search",
-      "name": "URLScan.io — URL Scans",
-      "display": "URLScan.io — URL",
+      "name": "URLScan.io \u2014 URL Scans",
+      "display": "URLScan.io \u2014 URL",
       "provider": "URLScan.io",
       "category": "Threat Intelligence",
       "description": "Search URLScan scan history for a specific URL.",
       "icon": "https://www.google.com/s2/favicons?domain=urlscan.io&sz=32",
       "signupURL": "https://urlscan.io/user/signup",
-      "types": ["url"],
+      "types": [
+        "url"
+      ],
       "payWall": "freemium",
       "region": "global",
       "priority": 70,
@@ -1082,21 +1283,26 @@
       "autorun": false,
       "authorization": {
         "fields": [
-          { "key": "key", "name": "API Key (optional)", "required": false }
+          {
+            "key": "key",
+            "name": "API Key (optional)",
+            "required": false
+          }
         ]
       }
     },
-
     {
       "id": "blockchain.crypto-address.lookup",
-      "name": "Blockchain.com — Bitcoin Address",
+      "name": "Blockchain.com \u2014 Bitcoin Address",
       "display": "Blockchain.com",
       "provider": "Blockchain.com",
       "category": "Crypto Intelligence",
       "description": "Balance, total received/sent and recent transactions for a Bitcoin address. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=blockchain.com&sz=32",
       "signupURL": "",
-      "types": ["crypto-address"],
+      "types": [
+        "crypto-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 75,
@@ -1104,19 +1310,23 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "cryptoscamdb.domain.check",
-      "name": "CryptoScamDB — Domain Check",
-      "display": "CryptoScamDB — Domain",
+      "name": "CryptoScamDB \u2014 Domain Check",
+      "display": "CryptoScamDB \u2014 Domain",
       "provider": "CryptoScamDB",
       "category": "Crypto Intelligence",
       "description": "Check a domain against the CryptoScamDB community scam database. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=cryptoscamdb.org&sz=32",
       "signupURL": "",
-      "types": ["domain", "website"],
+      "types": [
+        "domain",
+        "website"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 68,
@@ -1124,19 +1334,22 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "cryptoscamdb.crypto-address.check",
-      "name": "CryptoScamDB — Address Check",
-      "display": "CryptoScamDB — Address",
+      "name": "CryptoScamDB \u2014 Address Check",
+      "display": "CryptoScamDB \u2014 Address",
       "provider": "CryptoScamDB",
       "category": "Crypto Intelligence",
       "description": "Check a crypto wallet address against the CryptoScamDB community scam database. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=cryptoscamdb.org&sz=32",
       "signupURL": "",
-      "types": ["crypto-address"],
+      "types": [
+        "crypto-address"
+      ],
       "payWall": "free",
       "region": "global",
       "priority": 66,
@@ -1144,19 +1357,23 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     },
-
     {
       "id": "edgar.name.search",
-      "name": "SEC EDGAR — Company Filings",
+      "name": "SEC EDGAR \u2014 Company Filings",
       "display": "SEC EDGAR",
       "provider": "SEC",
       "category": "Company Intelligence",
       "description": "US company registration details (SIC, state, tickers) and last 10 SEC filings. No API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=sec.gov&sz=32",
       "signupURL": "",
-      "types": ["name", "domain"],
+      "types": [
+        "name",
+        "domain"
+      ],
       "payWall": "free",
       "region": "us",
       "priority": 55,
@@ -1164,7 +1381,9 @@
       "requestRate": "",
       "fields": [],
       "autorun": false,
-      "authorization": { "fields": [] }
+      "authorization": {
+        "fields": []
+      }
     }
   ]
 }
