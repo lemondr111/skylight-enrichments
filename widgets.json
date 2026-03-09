@@ -1482,7 +1482,10 @@
       "icon": "https://www.google.com/s2/favicons?domain=company-information.service.gov.uk&sz=32",
       "signupURL": "https://developer.company-information.service.gov.uk/",
       "types": [
-        "company-name"
+        "person-name",
+        "company-name",
+        "domain",
+        "website"
       ],
       "payWall": "free",
       "region": "uk",
