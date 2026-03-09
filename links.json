@@ -3449,6 +3449,198 @@
         "email-address"
       ],
       "autorun": false
+    },
+    {
+      "id": "92465",
+      "provider": "MalwareBazaar",
+      "display": "MalwareBazaar \u2014 Hash Lookup",
+      "icon": "https://www.google.com/s2/favicons?domain=bazaar.abuse.ch&sz=32",
+      "description": "Search the MalwareBazaar database for malware samples by SHA-256, SHA-1, or MD5 hash.",
+      "payWall": "Free",
+      "url": "https://bazaar.abuse.ch/sample/{value}/",
+      "category": "Threat Intelligence",
+      "priority": 80,
+      "region": "Global",
+      "types": [
+        "hash"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92466",
+      "provider": "Hybrid Analysis",
+      "display": "Hybrid Analysis \u2014 Hash Search",
+      "icon": "https://www.google.com/s2/favicons?domain=hybrid-analysis.com&sz=32",
+      "description": "Search Hybrid Analysis sandbox reports by file hash (MD5, SHA-1, SHA-256).",
+      "payWall": "Free",
+      "url": "https://www.hybrid-analysis.com/search?query={value}",
+      "category": "Threat Intelligence",
+      "priority": 78,
+      "region": "Global",
+      "types": [
+        "hash"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92467",
+      "provider": "AlienVault OTX",
+      "display": "OTX \u2014 File Indicator",
+      "icon": "https://www.google.com/s2/favicons?domain=otx.alienvault.com&sz=32",
+      "description": "Look up a file hash on AlienVault OTX to find threat intel pulses and reports.",
+      "payWall": "Free",
+      "url": "https://otx.alienvault.com/indicator/file/{value}",
+      "category": "Threat Intelligence",
+      "priority": 75,
+      "region": "Global",
+      "types": [
+        "hash"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92468",
+      "provider": "Joe Sandbox",
+      "display": "Joe Sandbox \u2014 Hash Search",
+      "icon": "https://www.google.com/s2/favicons?domain=joesandbox.com&sz=32",
+      "description": "Search Joe Sandbox analysis reports by file hash.",
+      "payWall": "Free",
+      "url": "https://www.joesandbox.com/search#q={value}",
+      "category": "Threat Intelligence",
+      "priority": 70,
+      "region": "Global",
+      "types": [
+        "hash"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92469",
+      "provider": "MetaDefender",
+      "display": "MetaDefender \u2014 Hash Lookup",
+      "icon": "https://www.google.com/s2/favicons?domain=metadefender.opswat.com&sz=32",
+      "description": "Multi-engine malware scan results for a file hash via OPSWAT MetaDefender.",
+      "payWall": "Free",
+      "url": "https://metadefender.opswat.com/results/file/{value}/regular/overview",
+      "category": "Threat Intelligence",
+      "priority": 68,
+      "region": "Global",
+      "types": [
+        "hash"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92470",
+      "provider": "Blockchair",
+      "display": "Blockchair \u2014 Address Explorer",
+      "icon": "https://www.google.com/s2/favicons?domain=blockchair.com&sz=32",
+      "description": "Multi-chain blockchain explorer \u2014 auto-detects Bitcoin, Ethereum, and 40+ other chains.",
+      "payWall": "Free",
+      "url": "https://blockchair.com/search?q={value}",
+      "category": "Cryptocurrency",
+      "priority": 90,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92471",
+      "provider": "Blockchain.com",
+      "display": "Blockchain.com \u2014 BTC Address",
+      "icon": "https://www.google.com/s2/favicons?domain=blockchain.com&sz=32",
+      "description": "Bitcoin address balance, transaction history, and UTXO details on Blockchain.com.",
+      "payWall": "Free",
+      "url": "https://www.blockchain.com/explorer/addresses/btc/{value}",
+      "category": "Cryptocurrency",
+      "priority": 85,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92472",
+      "provider": "Etherscan",
+      "display": "Etherscan \u2014 ETH Address",
+      "icon": "https://www.google.com/s2/favicons?domain=etherscan.io&sz=32",
+      "description": "Ethereum address details, token holdings, and transaction history on Etherscan.",
+      "payWall": "Free",
+      "url": "https://etherscan.io/address/{value}",
+      "category": "Cryptocurrency",
+      "priority": 85,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92473",
+      "provider": "Ethplorer",
+      "display": "Ethplorer \u2014 ETH Address",
+      "icon": "https://www.google.com/s2/favicons?domain=ethplorer.io&sz=32",
+      "description": "Ethereum address portfolio, token holdings, and transfers on Ethplorer.",
+      "payWall": "Free",
+      "url": "https://ethplorer.io/address/{value}",
+      "category": "Cryptocurrency",
+      "priority": 82,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92474",
+      "provider": "Breadcrumbs",
+      "display": "Breadcrumbs \u2014 Crypto Forensics",
+      "icon": "https://www.google.com/s2/favicons?domain=breadcrumbs.app&sz=32",
+      "description": "Crypto address risk scoring and transaction graph forensics across Bitcoin and Ethereum.",
+      "payWall": "freemium",
+      "url": "https://www.breadcrumbs.app/reports/{value}",
+      "category": "Cryptocurrency",
+      "priority": 78,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92475",
+      "provider": "OXT",
+      "display": "OXT \u2014 Bitcoin Address Graph",
+      "icon": "https://www.google.com/s2/favicons?domain=oxt.me&sz=32",
+      "description": "Bitcoin address transaction graph and cluster analysis on OXT.",
+      "payWall": "Free",
+      "url": "https://oxt.me/address/{value}",
+      "category": "Cryptocurrency",
+      "priority": 75,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
+    },
+    {
+      "id": "92476",
+      "provider": "Blockstream",
+      "display": "Blockstream \u2014 BTC Explorer",
+      "icon": "https://www.google.com/s2/favicons?domain=blockstream.info&sz=32",
+      "description": "Bitcoin address and transaction lookup on Blockstream's open-source explorer.",
+      "payWall": "Free",
+      "url": "https://blockstream.info/address/{value}",
+      "category": "Cryptocurrency",
+      "priority": 72,
+      "region": "Global",
+      "types": [
+        "crypto-address"
+      ],
+      "autorun": false
     }
   ]
 }
