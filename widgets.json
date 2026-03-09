@@ -1499,35 +1499,6 @@
           }
         ]
       }
-    },
-    {
-      "id": "companieshouse.domain.search",
-      "name": "Companies House \u2014 Domain / Company Search",
-      "display": "Companies House",
-      "provider": "Companies House (UK)",
-      "category": "Company Intelligence",
-      "description": "Search the UK company register using a domain name (e.g. rolls-royce.com \u2192 Rolls-Royce). Returns status, officers, and registered address.",
-      "icon": "https://www.google.com/s2/favicons?domain=company-information.service.gov.uk&sz=32",
-      "signupURL": "https://developer.company-information.service.gov.uk/",
-      "types": [
-        "domain",
-        "website"
-      ],
-      "payWall": "free",
-      "region": "uk",
-      "priority": 55,
-      "testValue": "rolls-royce.com",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": [
-          {
-            "key": "key",
-            "name": "API Key"
-          }
-        ]
-      }
     }
   ]
 }
