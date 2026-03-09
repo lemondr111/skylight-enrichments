@@ -1442,34 +1442,6 @@
       }
     },
     {
-      "id": "hashescom.hash.search",
-      "name": "Hashes.com \u2014 Reverse Hash Lookup",
-      "display": "Hashes.com",
-      "provider": "Hashes.com",
-      "category": "Breach / Credentials",
-      "description": "Reverse-lookup a hash (MD5, SHA-1, SHA-256, NTLM, bcrypt, and more) against the Hashes.com cracked password database. Free API key required.",
-      "icon": "https://www.google.com/s2/favicons?domain=hashes.com&sz=32",
-      "signupURL": "https://hashes.com/en/register",
-      "types": [
-        "hash"
-      ],
-      "payWall": "freemium",
-      "region": "global",
-      "priority": 75,
-      "testValue": "5f4dcc3b5aa765d61d8327deb882cf99",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": [
-          {
-            "key": "key",
-            "name": "API Key (optional \u2014 higher rate limits)"
-          }
-        ]
-      }
-    },
-    {
       "id": "ethplorer.crypto-address.search",
       "name": "Ethplorer \u2014 Ethereum Portfolio",
       "display": "Ethplorer",
