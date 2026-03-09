@@ -1470,18 +1470,18 @@
       }
     },
     {
-      "id": "etherscan.crypto-address.search",
-      "name": "Etherscan \u2014 Ethereum Account Lookup",
-      "display": "Etherscan",
-      "provider": "Etherscan",
+      "id": "ethplorer.crypto-address.search",
+      "name": "Ethplorer \u2014 Ethereum Portfolio",
+      "display": "Ethplorer",
+      "provider": "Ethplorer",
       "category": "Crypto / Blockchain",
-      "description": "ETH balance, recent transactions, and ERC-20 token activity for an Ethereum address (0x\u2026). Supports Ethereum mainnet.",
-      "icon": "https://www.google.com/s2/favicons?domain=etherscan.io&sz=32",
-      "signupURL": "https://etherscan.io/register",
+      "description": "ETH balance, all ERC-20 token holdings with USD values, and recent transactions for an Ethereum address. No API key required (uses freekey).",
+      "icon": "https://www.google.com/s2/favicons?domain=ethplorer.io&sz=32",
+      "signupURL": "https://ethplorer.io/wallet",
       "types": [
         "crypto-address"
       ],
-      "payWall": "freemium",
+      "payWall": "free",
       "region": "global",
       "priority": 72,
       "testValue": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045",
@@ -1492,7 +1492,7 @@
         "fields": [
           {
             "key": "key",
-            "name": "API Key"
+            "name": "API Key (optional \u2014 higher rate limits)"
           }
         ]
       }
