@@ -1324,6 +1324,7 @@
       "icon": "https://www.google.com/s2/favicons?domain=sec.gov&sz=32",
       "signupURL": "",
       "types": [
+        "person-name",
         "company-name",
         "domain"
       ],
