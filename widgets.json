@@ -1325,8 +1325,7 @@
       "signupURL": "",
       "types": [
         "person-name",
-        "company-name",
-        "domain"
+        "company-name"
       ],
       "payWall": "free",
       "region": "us",
@@ -1483,9 +1482,7 @@
       "signupURL": "https://developer.company-information.service.gov.uk/",
       "types": [
         "person-name",
-        "company-name",
-        "domain",
-        "website"
+        "company-name"
       ],
       "payWall": "free",
       "region": "uk",
