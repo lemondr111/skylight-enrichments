@@ -490,7 +490,7 @@
         "domain",
         "ip-address",
         "alias",
-        "name"
+        "person-name"
       ],
       "payWall": "paid",
       "region": "global",
@@ -690,7 +690,7 @@
         "email-address",
         "phone-number",
         "alias",
-        "name"
+        "person-name"
       ],
       "payWall": "paid",
       "region": "global",
@@ -747,7 +747,7 @@
       "signupURL": "https://ip-geolocation.whoisxmlapi.com/api/signup",
       "types": [
         "email-address",
-        "name",
+        "person-name",
         "phone-number"
       ],
       "payWall": "freemium",
@@ -1324,7 +1324,7 @@
       "icon": "https://www.google.com/s2/favicons?domain=sec.gov&sz=32",
       "signupURL": "",
       "types": [
-        "name",
+        "company-name",
         "domain"
       ],
       "payWall": "free",
@@ -1394,7 +1394,8 @@
       "icon": "https://www.google.com/s2/favicons?domain=opensanctions.org&sz=32",
       "signupURL": "https://www.opensanctions.org/api/",
       "types": [
-        "name"
+        "person-name",
+        "company-name"
       ],
       "payWall": "freemium",
       "region": "global",
@@ -1480,7 +1481,7 @@
       "icon": "https://www.google.com/s2/favicons?domain=company-information.service.gov.uk&sz=32",
       "signupURL": "https://developer.company-information.service.gov.uk/",
       "types": [
-        "name"
+        "company-name"
       ],
       "payWall": "free",
       "region": "uk",
