@@ -1447,7 +1447,7 @@
       "display": "Hashes.com",
       "provider": "Hashes.com",
       "category": "Breach / Credentials",
-      "description": "Reverse-lookup a hash (MD5, SHA-1, SHA-256, NTLM, bcrypt, and more) against the Hashes.com cracked password database.",
+      "description": "Reverse-lookup a hash (MD5, SHA-1, SHA-256, NTLM, bcrypt, and more) against the Hashes.com cracked password database. Free API key required.",
       "icon": "https://www.google.com/s2/favicons?domain=hashes.com&sz=32",
       "signupURL": "https://hashes.com/en/register",
       "types": [
@@ -1464,8 +1464,7 @@
         "fields": [
           {
             "key": "key",
-            "name": "API Key (optional \u2014 higher rate limits)",
-            "required": false
+            "name": "API Key (optional \u2014 higher rate limits)"
           }
         ]
       }
