@@ -1464,7 +1464,8 @@
         "fields": [
           {
             "key": "key",
-            "name": "API Key (optional \u2014 higher rate limits)"
+            "name": "API Key (optional \u2014 higher rate limits)",
+            "required": false
           }
         ]
       }
@@ -1492,7 +1493,8 @@
         "fields": [
           {
             "key": "key",
-            "name": "API Key (optional \u2014 higher rate limits)"
+            "name": "API Key (optional \u2014 higher rate limits)",
+            "required": false
           }
         ]
       }
