@@ -1414,35 +1414,6 @@
       }
     },
     {
-      "id": "opensanctions.domain.search",
-      "name": "OpenSanctions \u2014 Domain / Company Search",
-      "display": "OpenSanctions",
-      "provider": "OpenSanctions",
-      "category": "Sanctions & PEP",
-      "description": "Search OpenSanctions for sanctioned entities associated with a company name derived from a domain.",
-      "icon": "https://www.google.com/s2/favicons?domain=opensanctions.org&sz=32",
-      "signupURL": "https://www.opensanctions.org/api/",
-      "types": [
-        "domain",
-        "website"
-      ],
-      "payWall": "freemium",
-      "region": "global",
-      "priority": 55,
-      "testValue": "kremlin.ru",
-      "requestRate": "",
-      "fields": [],
-      "autorun": false,
-      "authorization": {
-        "fields": [
-          {
-            "key": "key",
-            "name": "API Key"
-          }
-        ]
-      }
-    },
-    {
       "id": "ethplorer.crypto-address.search",
       "name": "Ethplorer \u2014 Ethereum Portfolio",
       "display": "Ethplorer",
