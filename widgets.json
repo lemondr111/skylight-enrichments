@@ -806,7 +806,8 @@
       "signupURL": "https://leakcheck.io/",
       "types": [
         "email-address",
-        "alias"
+        "alias",
+        "password"
       ],
       "payWall": "paid",
       "region": "global",
