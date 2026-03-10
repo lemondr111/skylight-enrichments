@@ -491,6 +491,7 @@
         "ip-address",
         "alias",
         "person-name",
+        "phone-number",
         "password"
       ],
       "payWall": "paid",
@@ -801,12 +802,13 @@
       "display": "LeakCheck — Breach Lookup",
       "provider": "LeakCheck",
       "category": "Threat Intelligence",
-      "description": "Look up an email address or username in breach databases. Returns credentials and source databases.",
+      "description": "Look up an email address, username, phone number or password in breach databases. Returns credentials and source databases.",
       "icon": "https://www.google.com/s2/favicons?domain=leakcheck.io&sz=32",
       "signupURL": "https://leakcheck.io/",
       "types": [
         "email-address",
         "alias",
+        "phone-number",
         "password"
       ],
       "payWall": "paid",
