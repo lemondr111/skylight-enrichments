@@ -1534,8 +1534,8 @@
       }
     },
     {
-      "id": "predicta.username.search",
-      "name": "Predicta Search \u2014 Username Lookup",
+      "id": "predicta.alias.search",
+      "name": "Predicta Search \u2014 Alias/Username Lookup",
       "display": "Predicta",
       "provider": "Predicta Search",
       "category": "Identity / OSINT",
@@ -1543,7 +1543,7 @@
       "icon": "https://www.google.com/s2/favicons?domain=predictasearch.com&sz=32",
       "signupURL": "https://www.predictasearch.com/api",
       "types": [
-        "username"
+        "alias"
       ],
       "payWall": "paid",
       "region": "global",
